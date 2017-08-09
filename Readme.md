@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Maria Kamennova](https://up.htmlacademy.ru/htmlcss/18/user/356023).
-* Наставник: `Евгений Ржавцев`.
+* Наставник: [Евгений Ржавцев](https://htmlacademy.ru/profile/id15361).
 
 ---
 
