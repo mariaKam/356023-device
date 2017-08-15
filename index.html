@@ -26,16 +26,16 @@
                     <ul class="site-nav header-site-nav">
                         <li class="contains-sub-menu"><a href="catalog.html">Каталог товаров</a>
                             <div class="sub-menu">
-                                <ul>
+                                <ul class="video-products">
                                     <li><a href="catalog.html">Виртуальная реальность</a></li>
                                     <li><a href="catalog.html">Моноподы для селфи</a></li>
                                     <li><a href="catalog.html">Экшн-камеры</a></li>
                                 </ul>
-                                <ul>
+                                <ul class="wearable-products">
                                     <li><a href="catalog.html">Фитнес-браслеты</a></li>
                                     <li><a href="catalog.html">Умные часы</a></li>
                                 </ul>
-                                <ul>
+                                <ul class="quodrupter-products">
                                     <li><a href="catalog.html">Квадрокоптеры</a></li>
                                 </ul>
                             </div>
@@ -199,14 +199,13 @@
                 <section class="about-us">
                     <h2>О нас</h2>
                     <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-                    <div>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими
-                        транспортными компаниями:
-                        <ul class="transport-companies-list">
-                            <li>Деловые линии</li>
-                            <li>Автотрейдинг</li>
-                            <li>ЖелДорЭкспедиция</li>
-                        </ul>
-                    </div>
+                    <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими
+                        транспортными компаниями:</p>
+                    <ul class="transport-companies-list">
+                        <li>Деловые линии</li>
+                        <li>Автотрейдинг</li>
+                        <li>ЖелДорЭкспедиция</li>
+                    </ul>
                     <a class="btn" href="about-us.html">Подробнее о нас</a>
                 </section>
 
@@ -215,43 +214,48 @@
                     <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность
                         покупки. Всякое бывает.
                     </p>
-                    <img src="img/placeholder.png" width="560" height="222" alt="Карта" class="map">
+                    <img src="img/placeholder.png" width="560" height="222" alt="г. Москва, ул. Строителей, 15"
+                         class="contacts-map">
                     <a class="btn contacts-btn" href="#modal-contact">Напишите нам</a>
                 </section>
             </main>
 
             <footer class="main-footer">
-                <a class="main-footer-logo">
-                    <img src="img/placeholder.png" width="164" height="36" alt="Device"/>
-                </a>
-                <ul class="user-nav footer-user-nav">
-                    <li class="login"><a href="login.html">Войти</a></li>
-                    <li class="compare"><a href="compare.html">Сравнить</a></li>
-                    <li class="cart"><a href="cart.html">Корзина</a></li>
-                </ul>
-                <p class="footer-address">
-                    г. Москва, ул. Строителей, 15
-                </p>
-                <ul class="site-nav footer-site-nav">
-                    <li><a href="delivery.html">Доставка</a></li>
-                    <li><a href="warranty.html">Гарантия</a></li>
-                    <li><a href="contacts.html">Контакты</a></li>
-                </ul>
-                <p class="footer-phone">
-                    Тел.: +7 (495) 495-95-95
-                </p>
-                <div class="footer-social">
-                    <ul>
+                <div class="footer-top">
+                    <a class="main-footer-logo">
+                        <img src="img/placeholder.png" width="164" height="36" alt="Device"/>
+                    </a>
+                    <ul class="user-nav footer-user-nav">
+                        <li class="login"><a href="login.html">Войти</a></li>
+                        <li class="compare"><a href="compare.html">Сравнить</a></li>
+                        <li class="cart"><a href="cart.html">Корзина</a></li>
+                    </ul>
+                </div>
+                <div class="footer-middle">
+                    <p class="footer-address">
+                        г. Москва, ул. Строителей, 15
+                    </p>
+                    <ul class="site-nav footer-site-nav">
+                        <li><a href="delivery.html">Доставка</a></li>
+                        <li><a href="warranty.html">Гарантия</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                    <p class="footer-phone">
+                        Тел.: +7 (495) 495-95-95
+                    </p>
+                </div>
+                <div class="footer-bottom">
+                    <ul class="footer-social">
                         <li><a class="social-vk" href="#">Вконтакте</a></li>
                         <li><a class="social-fb" href="#">Фейсбук</a></li>
                         <li><a class="social-insta" href="#">Инстаграм</a></li>
                     </ul>
+                    <p class="footer-copyright">
+                        <a class="footer-copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss">
+                            <img src="img/placeholder.png" width="27" height="35" alt="HtmlAcademy"/>
+                        </a>
+                    </p>
                 </div>
-                <p class="footer-copyright">
-                    <a class="footer-copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss">
-                        <img src="img/placeholder.png" width="27" height="35" alt="HtmlAcademy"/>
-                    </a>
-                </p>
             </footer>
 
             <section class="modal modal-contact" id="modal-contact">
@@ -272,12 +276,12 @@
                     </p>
                     <button type="submit" class="btn">Отправить</button>
                 </form>
-                <span class="modal-close">x</span>
+                <span class="modal-close">Закрыть</span>
             </section>
 
             <section class="modal modal-map">
                 <h2 class="visually-hidden">Как до нас добраться</h2>
-                <span class="modal-close">x</span>
+                <span class="modal-close">Закрыть</span>
             </section>
         </div>
     </body>
