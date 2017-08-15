@@ -8,24 +8,24 @@
 
         <div class="container">
             <header class="main-header">
+
+                <h1 class="logo main-header-logo"><a>Device</a></h1>
+
+                <form class="site-search" action="https://echo.htmlacademy.ru" method="get">
+                    <input type="text" placeholder="Поиск по сайту">
+                    <button type="submit" class="search-btn">Найти</button>
+                </form>
+
+                <ul class="user-nav header-user-nav">
+                    <li class="user-name"><a href="profile.html">Валентин Петухов</a></li>
+                    <li class="logout"><a href="#">Выйти</a></li>
+                    <li class="compare"><a href="compare.html">Сравнить</a></li>
+                    <li class="cart"><a href="cart.html">Корзина</a></li>
+                </ul>
+
                 <nav class="main-nav">
-                    <a class="main-header-logo" href="index.html">
-                        <img src="img/placeholder.png" width="164px" height="36px" alt="Device"/>
-                    </a>
-                    <form class="search main-header-search" action="https://echo.htmlacademy.ru" method="get">
-                        <input type="text" placeholder="Поиск по сайту">
-                        <button type="submit" class="search-btn">Найти</button>
-                    </form>
-
-                    <ul class="user-nav header-user-nav">
-                        <li class="user-name"><a href="profile.html">Валентин Петухов</a></li>
-                        <li class="logout"><a href="#">Выйти</a></li>
-                        <li class="compare"><a href="compare.html">Сравнить</a></li>
-                        <li class="cart"><a href="cart.html">Корзина</a></li>
-                    </ul>
-
                     <ul class="site-nav header-site-nav">
-                        <li><a href="catalog.html">Каталог товаров</a>
+                        <li class="contains-sub-menu"><a href="catalog.html">Каталог товаров</a>
                             <div class="sub-menu">
                                 <ul>
                                     <li><a href="catalog.html">Виртуальная реальность</a></li>
@@ -47,6 +47,7 @@
                     </ul>
                 </nav>
             </header>
+
 
             <main>
                 <header class="page-header">
@@ -213,7 +214,9 @@
                     <img src="img/placeholder.png" width="164" height="36" alt="DEVICE"/>
                 </a>
                 <ul class="user-nav footer-user-nav">
-                    <li class="logout"><button class="logout-btn" name="logout">Выйти</button></li>
+                    <li class="logout">
+                        <button class="logout-btn" name="logout">Выйти</button>
+                    </li>
                     <li class="compare"><a href="compare.html">Сравнить</a></li>
                     <li class="cart"><a href="cart.html">Корзина</a></li>
                 </ul>
