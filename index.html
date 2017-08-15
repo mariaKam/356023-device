@@ -8,21 +8,21 @@
     <body>
         <div class="container">
             <header class="main-header">
+
+                <h1 class="logo main-header-logo"><a>Device</a></h1>
+
+                <form class="site-search" action="https://echo.htmlacademy.ru" method="get">
+                    <input type="text" placeholder="Поиск по сайту">
+                    <button type="submit" class="search-btn">Найти</button>
+                </form>
+
+                <ul class="user-nav header-user-nav">
+                    <li class="login"><a href="login.html">Войти</a></li>
+                    <li class="compare"><a href="compare.html">Сравнить</a></li>
+                    <li class="cart"><a href="cart.html">Корзина</a></li>
+                </ul>
+
                 <nav class="main-nav">
-                    <a class="main-header-logo">
-                        <img src="img/placeholder.png" width="164px" height="36px" alt="DEVICE"/>
-                    </a>
-                    <form class="search main-header-search" action="https://echo.htmlacademy.ru" method="get">
-                        <input type="text" placeholder="Поиск по сайту">
-                        <button type="submit" class="search-btn">Найти</button>
-                    </form>
-
-                    <ul class="user-nav header-user-nav">
-                        <li class="login"><a href="login.html">Войти</a></li>
-                        <li class="compare"><a href="compare.html">Сравнить</a></li>
-                        <li class="cart"><a href="cart.html">Корзина</a></li>
-                    </ul>
-
                     <ul class="site-nav header-site-nav">
                         <li class="contains-sub-menu"><a href="catalog.html">Каталог товаров</a>
                             <div class="sub-menu">
@@ -50,16 +50,17 @@
             <main>
                 <h1 class="visually-hidden">Магазин гаджетов "Девайс"</h1>
 
-                <section class="slider">
-                    <ol class="slide-indicators">
+                <section class="slider promo-slider">
+                    <ol class="slider-indicators">
                         <li class="indicator indicator-1 active"></li>
                         <li class="indicator indicator-2"></li>
                         <li class="indicator indicator-3"></li>
                     </ol>
-                    <ul class="slides-list">
-                        <li class="slide slide-1 active">
+                    <div class="slider-inner">
+                        <article class="slide slide-1 active">
                             <span class="slide-number">01</span>
-                            <img src="img/placeholder.png" width="384px" height="486px" class="slide-image"/>
+                            <img src="img/placeholder.png" width="384" height="486" alt="Селфи-палка"
+                                 class="slide-image"/>
                             <h2 class="slide-title">Делай селфи,<br> как Бен Стиллер!</h2>
                             <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров
                                 длиной и весом всего 5 килограмм.</p>
@@ -76,10 +77,11 @@
                                     <td>Материал</td>
                                 </tr>
                             </table>
-                        </li>
-                        <li class="slide slide-2">
+                        </article>
+                        <article class="slide slide-2">
                             <span class="slide-number">02</span>
-                            <img src="img/placeholder.png" width="345px" height="485px" class="slide-image"/>
+                            <img src="img/placeholder.png" width="345" height="485" alt="Фитнес-браслет"
+                                 class="slide-image"/>
                             <h2 class="slide-title">Худеем<br> правильно!</h2>
                             <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать
                                 диету.</p>
@@ -92,10 +94,11 @@
                                     <td>Без подзарядки</td>
                                 </tr>
                             </table>
-                        </li>
-                        <li class="slide slide-3">
+                        </article>
+                        <article class="slide slide-3">
                             <span class="slide-number">03</span>
-                            <img src="img/placeholder.png" width="384px" height="486px" class="slide-image"/>
+                            <img src="img/placeholder.png" width="384" height="486" alt="Квадрокоптер"
+                                 class="slide-image"/>
                             <h2 class="slide-title">Порхает как бабочка, жалит как пчела!</h2>
                             <p>Этот обычный, на первый взгляд, квадракоптер оснащен мощным лазером, замаскированным под
                                 стандартную камеру.</p>
@@ -110,8 +113,8 @@
                                     <td>Радиус поражения</td>
                                 </tr>
                             </table>
-                        </li>
-                    </ul>
+                        </article>
+                    </div>
                 </section>
 
                 <section class="product-categories">
@@ -174,20 +177,20 @@
                     <h2 class="visually-hidden">Популярные бренды</h2>
                     <ul class="product-brands-list">
                         <li>
-                            <img src="img/placeholder.png" class="brand-logo dji-logo" width="260px" height="100px"
+                            <img src="img/placeholder.png" class="brand-logo dji-logo" width="260" height="100"
                                  alt="dji"/>
                         </li>
                         <li>
-                            <img src="img/placeholder.png" class="brand-logo sri-gadgets-logo" width="260px"
-                                 height="100px"
+                            <img src="img/placeholder.png" class="brand-logo sri-gadgets-logo" width="260"
+                                 height="100"
                                  alt="SRI GADGETS"/>
                         </li>
                         <li>
-                            <img src="img/placeholder.png" class="brand-logo go-pro-logo" width="260px" height="100px"
+                            <img src="img/placeholder.png" class="brand-logo go-pro-logo" width="260" height="100"
                                  alt="GoPro"/>
                         </li>
                         <li>
-                            <img src="img/placeholder.png" class="brand-logo vive-logo" width="260px" height="100px"
+                            <img src="img/placeholder.png" class="brand-logo vive-logo" width="260" height="100"
                                  alt="VIVE"/>
                         </li>
                     </ul>
@@ -212,14 +215,14 @@
                     <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность
                         покупки. Всякое бывает.
                     </p>
-                    <img src="img/placeholder.png" width="560" height="222" class="map">
+                    <img src="img/placeholder.png" width="560" height="222" alt="Карта" class="map">
                     <a class="btn contacts-btn" href="#modal-contact">Напишите нам</a>
                 </section>
             </main>
 
             <footer class="main-footer">
                 <a class="main-footer-logo">
-                    <img src="img/placeholder.png" width="164px" height="36px" alt="Device"/>
+                    <img src="img/placeholder.png" width="164" height="36" alt="Device"/>
                 </a>
                 <ul class="user-nav footer-user-nav">
                     <li class="login"><a href="login.html">Войти</a></li>
@@ -229,7 +232,7 @@
                 <p class="footer-address">
                     г. Москва, ул. Строителей, 15
                 </p>
-                <ul class="site-nav">
+                <ul class="site-nav footer-site-nav">
                     <li><a href="delivery.html">Доставка</a></li>
                     <li><a href="warranty.html">Гарантия</a></li>
                     <li><a href="contacts.html">Контакты</a></li>
@@ -246,7 +249,7 @@
                 </div>
                 <p class="footer-copyright">
                     <a class="footer-copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss">
-                        <img src="img/placeholder.png" width="27px" height="35px" alt="HtmlAcademy"/>
+                        <img src="img/placeholder.png" width="27" height="35" alt="HtmlAcademy"/>
                     </a>
                 </p>
             </footer>
