@@ -19,6 +19,7 @@
                 </form>
 
                 <ul class="user-nav header-user-nav">
+                    <li class="login hidden"><a href="login.html">Войти</a></li>
                     <li class="user-name"><a href="profile.html">Валентин Петухов</a></li>
                     <li class="logout"><a href="#">Выйти</a></li>
                     <li class="compare"><a href="compare.html">Сравнить</a></li>
@@ -49,8 +50,6 @@
                     </ul>
                 </nav>
             </header>
-
-
             <main>
                 <header class="page-header">
                     <h1 class="page-title">Моноподы для селфи</h1>
@@ -118,9 +117,10 @@
                 </section>
 
                 <section class="catalog">
-                    <header class="catalog-header">
+                    <h2 class="visibility-hidden">Каталог моноподов для селфи</h2>
+                    <section class="sort">
                         <h2>Сортировка:</h2>
-                        <form class="sort" method="get" action="https://echo.htmlacademy.ru">
+                        <form class="sort-form" method="get" action="https://echo.htmlacademy.ru">
                             <ul class="sort-options-list">
                                 <li>
                                     <input class="visually-hidden filter-input filter-input-radio" type="radio"
@@ -146,67 +146,72 @@
                                 </li>
                             </ul>
                         </form>
-                    </header>
-                    <ul class="catalog-items-list">
-                        <li class="catalog-item">
-                            <h3>
-                                <a href="catalog-item.html"> Любительская селфи-палка</a>
-                            </h3>
-                            <p>
-                                <a href="catalog-item.html">
+                    </section>
+
+                    <section class="catalog-items">
+                        <h2 class="visibility-hidden">Результаты поиска</h2>
+                        <ul class="catalog-items-list">
+                            <li class="catalog-item">
+                                <h3>
+                                    <a href="catalog-item.html"> Любительская селфи-палка</a>
+                                </h3>
+                                <p>
+                                    <a href="catalog-item.html">
+                                        <img src="img/placeholder.png" width="360" height="380"
+                                             alt="Любительская селфи-палка"/>
+                                    </a>
+                                </p>
+                                <b class="item-price">500 руб.</b>
+                            </li>
+                            <li class="catalog-item">
+                                <h3>
+                                    <a href="catalog-item.html"> Профессиональная селфи-палка</a>
+                                </h3>
+                                <p>
+                                    <a href="catalog-item.html">
+                                        <img src="img/placeholder.png" width="360" height="380"
+                                             alt="Любительская селфи-палка"/>
+                                    </a>
+                                </p>
+                                <b class="item-price">500 руб.</b>
+                            </li>
+                            <li class="catalog-item">
+                                <h3>
+                                    <a href="catalog-item.html"> Непотопляемая селфи-палка</a>
+                                </h3>
+                                <p>
+                                    <a href="catalog-item.html">
+                                        <img src="img/placeholder.png" width="360" height="380"
+                                             alt="Любительская селфи-палка"/>
+                                    </a>
+                                </p>
+                                <b class="item-price">500 руб.</b>
+                            </li>
+                            <li class="catalog-item new-item">
+                                <h3>
+                                    <a href="catalog-item.html"> Селфи-палка "Следуй за мной" </a>
+                                </h3>
+                                <p>
                                     <img src="img/placeholder.png" width="360" height="380"
                                          alt="Любительская селфи-палка"/>
-                                </a>
-                            </p>
-                            <b class="item-price">500 руб.</b>
-                        </li>
-                        <li class="catalog-item">
-                            <h3>
-                                <a href="catalog-item.html"> Профессиональная селфи-палка</a>
-                            </h3>
-                            <p>
-                                <a href="catalog-item.html">
-                                    <img src="img/placeholder.png" width="360" height="380"
-                                         alt="Любительская селфи-палка"/>
-                                </a>
-                            </p>
-                            <b class="item-price">500 руб.</b>
-                        </li>
-                        <li class="catalog-item">
-                            <h3>
-                                <a href="catalog-item.html"> Непотопляемая селфи-палка</a>
-                            </h3>
-                            <p>
-                                <a href="catalog-item.html">
-                                    <img src="img/placeholder.png" width="360" height="380"
-                                         alt="Любительская селфи-палка"/>
-                                </a>
-                            </p>
-                            <b class="item-price">500 руб.</b>
-                        </li>
-                        <li class="catalog-item new-item">
-                            <h3>
-                                <a href="catalog-item.html"> Селфи-палка "Следуй за мной" </a>
-                            </h3>
-                            <p>
-                                <img src="img/placeholder.png" width="360" height="380" alt="Любительская селфи-палка"/>
-                            </p>
-                            <b class="item-price">500 руб.</b>
-                            <p class="item-actions">
-                                <a class="btn" href="#">В корзину</a>
-                                <a class="compare-btn" href="#">Добавить к сравнению</a>
-                            </p>
-                        </li>
-                    </ul>
-                    <footer class="catalog-footer">
-                        <a class="btn pagination-btn pagination-btn-prev">Назад</a>
-                        <ul class="pagination">
-                            <li class="pagination-item-current">1</li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
+                                </p>
+                                <b class="item-price">500 руб.</b>
+                                <p class="item-actions">
+                                    <a class="btn" href="#">В корзину</a>
+                                    <a class="compare-btn" href="#">Добавить к сравнению</a>
+                                </p>
+                            </li>
                         </ul>
-                        <a class="btn pagination-btn pagination-btn-next">Вперед</a>
-                    </footer>
+                        <div class="catalog-bottom">
+                            <button class="btn pagination-btn pagination-btn-prev" type="button">Назад</button>
+                            <ul class="pagination">
+                                <li class="pagination-item-current">1</li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                            </ul>
+                            <button class="btn pagination-btn pagination-btn-next" type="button">Вперед</button>
+                        </div>
+                    </section>
                 </section>
             </main>
 
@@ -233,7 +238,9 @@
                         <li><a href="contacts.html">Контакты</a></li>
                     </ul>
                     <p class="footer-phone">
-                        Тел.: +7 (495) 495-95-95
+                        Тел.: <a href="tel:+79385122332" class="phone-link">+7-938-512-23-32</a>
+                        <!-- У пользователей моб. устройств есть возможность позвонить кликнув по номеру телефона.-->
+                        <!-- В десктопных браузерах Skype может перехватит звонок -->
                     </p>
                 </div>
                 <div class="footer-bottom">
