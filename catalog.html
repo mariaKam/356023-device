@@ -4,8 +4,8 @@
         <meta charset="utf-8">
         <title>HTML Academy: Девайс</title>
     </head>
-    <body>
 
+    <body>
         <div class="container">
             <header class="main-header">
 
@@ -15,15 +15,14 @@
 
                 <form class="site-search" action="https://echo.htmlacademy.ru" method="get">
                     <input type="text" placeholder="Поиск по сайту">
-                    <button type="submit" class="search-btn">Найти</button>
+                    <button type="submit" class="site-search-btn">Найти</button>
                 </form>
-
-                <ul class="user-nav header-user-nav">
-                    <li class="login hidden"><a href="login.html">Войти</a></li>
-                    <li class="user-name"><a href="profile.html">Валентин Петухов</a></li>
-                    <li class="logout"><a href="#">Выйти</a></li>
-                    <li class="compare"><a href="compare.html">Сравнить</a></li>
-                    <li class="cart"><a href="cart.html">Корзина</a></li>
+                <ul class="user-links header-user-links">
+                    <li class="login-link hidden"><a href="login.html">Войти</a></li>
+                    <li class="user-name profile-link"><a href="profile.html">Валентин Петухов</a></li>
+                    <li class="logout-link"><a href="#">Выйти</a></li>
+                    <li class="compare-link"><a href="compare.html">Сравнить</a></li>
+                    <li class="cart-link"><a href="cart.html">Корзина</a></li>
                 </ul>
 
                 <nav class="main-nav">
@@ -50,6 +49,7 @@
                     </ul>
                 </nav>
             </header>
+
             <main>
                 <header class="page-header">
                     <h1 class="page-title">Моноподы для селфи</h1>
@@ -61,7 +61,7 @@
                 </header>
                 <section class="filters">
                     <h2>Фильтр:</h2>
-                    <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+                    <form class="filter-form" method="get" action="https://echo.htmlacademy.ru">
                         <fieldset>
                             <legend>Стоимость</legend>
                             <div class="range-slider price-range-slider">
@@ -117,39 +117,48 @@
                 </section>
 
                 <section class="catalog">
-                    <h2 class="visibility-hidden">Каталог моноподов для селфи</h2>
+                    <h2 class="visibility-hidden">Моноподы для селфи</h2>
                     <section class="sort">
                         <h2>Сортировка:</h2>
                         <form class="sort-form" method="get" action="https://echo.htmlacademy.ru">
                             <ul class="sort-options-list">
                                 <li>
                                     <input class="visually-hidden filter-input filter-input-radio" type="radio"
-                                           name="sort" value="by-price" checked> По цене
+                                           name="sort" value="by-price" id="sort-price" onchange="this.form.submit()"
+                                           checked>
+                                    <label for="sort-price">По цене</label>
                                 </li>
                                 <li>
                                     <input class="visually-hidden filter-input filter-input-radio" type="radio"
-                                           name="sort" value="by-type"> По типу
+                                           name="sort" value="by-type" id="sort-type" onchange="this.form.submit()">
+                                    <label for="sort-type">По типу</label>
                                 </li>
                                 <li>
                                     <input class="visually-hidden filter-input filter-input-radio" type="radio"
-                                           name="sort" value="by-popularity"> По популярности
+                                           name="sort" value="by-popularity" id="sort-popular"
+                                           onchange="this.form.submit()">
+                                    <label for="sort-popular">По популярности</label>
                                 </li>
                             </ul>
                             <ul class="sort-options-list">
                                 <li>
                                     <input class="visually-hidden filter-input filter-input-radio" type="radio"
-                                           name="display-order" value="ascending" checked> По возрастанию
+                                           name="display-order" value="ascending" id="sort-asc" checked
+                                           onchange="this.form.submit()">
+                                    <label for="sort-asc" class="visibility-hidden">По возрастанию</label>
                                 </li>
                                 <li>
                                     <input class="visually-hidden filter-input filter-input-radio" type="radio"
-                                           name="display-order" value="descending"> По убыванию
+                                           name="display-order" value="descending" id="sort-desc"
+                                           onchange="this.form.submit()">
+                                    <label for="sort-desc" class="visibility-hidden">По убыванию</label>
                                 </li>
                             </ul>
                         </form>
                     </section>
 
                     <section class="catalog-items">
-                        <h2 class="visibility-hidden">Результаты поиска</h2>
+                        <h2 class="visibility-hidden">Список товаров</h2>
                         <ul class="catalog-items-list">
                             <li class="catalog-item">
                                 <h3>
@@ -220,27 +229,25 @@
                     <a class="logo main-footer-logo" href="index.html">
                         <img src="img/placeholder.png" width="164" height="36" alt="DEVICE"/>
                     </a>
-                    <ul class="user-nav footer-user-nav">
-                        <li class="logout">
+                    <ul class="user-links footer-user-links">
+                        <li class="logout-link">
                             <button class="logout-btn" name="logout">Выйти</button>
                         </li>
-                        <li class="compare"><a href="compare.html">Сравнить</a></li>
-                        <li class="cart"><a href="cart.html">Корзина</a></li>
+                        <li class="compare-link"><a href="compare.html">Сравнить</a></li>
+                        <li class="cart-link"><a href="cart.html">Корзина</a></li>
                     </ul>
                 </div>
                 <div class="footer-middle">
                     <p class="footer-address">
                         г. Москва, ул. Строителей, 15
                     </p>
-                    <ul class="site-nav">
+                    <ul class="site-nav footer-site-nav">
                         <li><a href="delivery.html">Доставка</a></li>
                         <li><a href="warranty.html">Гарантия</a></li>
                         <li><a href="contacts.html">Контакты</a></li>
                     </ul>
                     <p class="footer-phone">
                         Тел.: <a href="tel:+79385122332" class="phone-link">+7-938-512-23-32</a>
-                        <!-- У пользователей моб. устройств есть возможность позвонить кликнув по номеру телефона.-->
-                        <!-- В десктопных браузерах Skype может перехватит звонок -->
                     </p>
                 </div>
                 <div class="footer-bottom">
