@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>HTML Academy: Девайс</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
     </head>
 
     <body>
@@ -10,7 +11,7 @@
             <header class="main-header">
 
                 <a class="logo main-header-logo">
-                    <img src="img/placeholder.png" alt="DEVICE" width="162" height="87"/>
+                    <img src="img/header-logo.png" alt="DEVICE" width="163" height="36"/>
                 </a>
 
                 <form class="site-search" action="https://echo.htmlacademy.ru" method="get">
@@ -64,7 +65,7 @@
                         <div class="slider-inner">
                             <article class="slide slide-1 active">
                                 <span class="slide-number">01</span>
-                                <img src="img/placeholder.png" width="384" height="486" alt="Селфи-палка"
+                                <img src="img/slider-1.png" width="384" height="486" alt="Селфи-палка"
                                      class="slide-image"/>
                                 <h2 class="slide-title">Делай селфи,<br> как Бен Стиллер!</h2>
                                 <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!)
@@ -86,7 +87,7 @@
                             </article>
                             <article class="slide slide-2">
                                 <span class="slide-number">02</span>
-                                <img src="img/placeholder.png" width="345" height="485" alt="Фитнес-браслет"
+                                <img src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет"
                                      class="slide-image"/>
                                 <h2 class="slide-title">Худеем<br> правильно!</h2>
                                 <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и
@@ -104,7 +105,7 @@
                             </article>
                             <article class="slide slide-3">
                                 <span class="slide-number">03</span>
-                                <img src="img/placeholder.png" width="384" height="486" alt="Квадрокоптер"
+                                <img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер"
                                      class="slide-image"/>
                                 <h2 class="slide-title">Порхает как бабочка, жалит как пчела!</h2>
                                 <p>Этот обычный, на первый взгляд, квадракоптер оснащен мощным лазером, замаскированным
@@ -132,27 +133,27 @@
                     <ul class="product-categories-list">
                         <li class="category-virtual-reality">
                             <a href="catalog.html"><span class="category-icon"></span></a>
-                            <h3><a href="catalog.html">Виртуальная реальность</a></h3>
+                            <h3 class="category-name"><a href="catalog.html">Виртуальная реальность</a></h3>
                         </li>
                         <li class="category-selfie-monopod">
                             <a href="catalog.html"><span class="category-icon"></span></a>
-                            <h3><a href="catalog.html">Моноподы для селфи</a></h3>
+                            <h3 class="category-name"><a href="catalog.html">Моноподы для селфи</a></h3>
                         </li>
                         <li class="category-action-camera">
                             <a href="catalog.html"><span class="category-icon"></span></a>
-                            <h3><a href="catalog.html">Экшн-камеры</a></h3>
+                            <h3 class="category-name"><a href="catalog.html">Экшн-камеры</a></h3>
                         </li>
                         <li class="category-fitness-bracelet">
                             <a href="catalog.html"><span class="category-icon"></span></a>
-                            <h3><a href="catalog.html">Фитнес-браслеты</a></h3>
+                            <h3 class="category-name"><a href="catalog.html">Фитнес-браслеты</a></h3>
                         </li>
                         <li class="category-smart-watch">
                             <a href="catalog.html"><span class="category-icon"></span></a>
-                            <h3><a href="catalog.html">Умные часы</a></h3>
+                            <h3 class="category-name"><a href="catalog.html">Умные часы</a></h3>
                         </li>
                         <li class="category-quadrupter">
                             <a href="catalog.html"><span class="category-icon"></span></a>
-                            <h3><a href="catalog.html">Квадрокоптеры</a></h3>
+                            <h3 class="category-name"><a href="catalog.html">Квадрокоптеры</a></h3>
                         </li>
                     </ul>
                 </section>
@@ -165,48 +166,49 @@
                     </ul>
                     <div class="tabs-content">
                         <div class="tab-pane" id="delivery">
-                            <h2>Доставка</h2>
+                            <h2 class="tab-title">Доставка</h2>
                             <p>Мы с удовольствием доставим товар прямо к вашему подъезду совершенно бесплатно! Ведь мы
                                 неплохо заработаем, поднимая его на ваш этаж.</p>
                         </div>
                         <div class="tab-pane" id="warranty">
-                            <h2>Гарантия</h2>
+                            <h2 class="tab-title">Гарантия</h2>
                             <p>Если из-за возгорания купленого у нас товара у вас сгорит дом - не переживайте, мы
                                 выдадим вам новый. Товар, не дом, конечно же.</p>
                         </div>
                         <div class="tab-pane" id="credit">
-                            <h2>Кредит</h2>
+                            <h2 class="tab-title">Кредит</h2>
                             <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее
                                 выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
                         </div>
                     </div>
                 </section>
 
+
                 <section class="product-brands">
                     <h2 class="visually-hidden">Популярные бренды</h2>
                     <ul class="product-brands-list">
                         <li>
-                            <img src="img/placeholder.png" class="brand-logo dji-logo" width="260" height="100"
+                            <img src="img/logo-1.png" class="brand-logo dji-logo" width="260" height="100"
                                  alt="dji"/>
                         </li>
                         <li>
-                            <img src="img/placeholder.png" class="brand-logo sri-gadgets-logo" width="260"
+                            <img src="img/logo-3.png" class="brand-logo sri-gadgets-logo" width="260"
                                  height="100"
                                  alt="SRI GADGETS"/>
                         </li>
                         <li>
-                            <img src="img/placeholder.png" class="brand-logo go-pro-logo" width="260" height="100"
+                            <img src="img/logo-2.png" class="brand-logo go-pro-logo" width="260" height="100"
                                  alt="GoPro"/>
                         </li>
                         <li>
-                            <img src="img/placeholder.png" class="brand-logo vive-logo" width="260" height="100"
+                            <img src="img/logo-4.png" class="brand-logo vive-logo" width="260" height="100"
                                  alt="VIVE"/>
                         </li>
                     </ul>
                 </section>
 
                 <section class="about-us">
-                    <h2>О нас</h2>
+                    <h2 class="section-title">О нас</h2>
                     <p> Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас. </p>
                     <p> Мы можем доставить ваш товар в самые отдаленные точки России!
                         DEVICE работает со многими транспортными компаниями: </p>
@@ -219,11 +221,11 @@
                 </section>
 
                 <section class="contacts">
-                    <h2>Контакты</h2>
+                    <h2 class="section-title">Контакты</h2>
                     <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность
                         покупки. Всякое бывает.
                     </p>
-                    <img src="img/placeholder.png" width="560" height="222" alt="г. Москва, ул. Строителей, 15"
+                    <img src="img/map.jpg" width="560" height="222" alt="г. Москва, ул. Строителей, 15"
                          class="contacts-map-image">
                     <iframe width="560" height="222" class="contacts-map-interactive"
                             src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJVYlcX_ZMtUYRHlBVzQxxlAY&key=AIzaSyDGS-M4u3Ve0HbcdXrRxklKUpEL4heQoLs"
@@ -236,7 +238,7 @@
             <footer class="main-footer">
                 <div class="footer-top">
                     <a class="logo main-footer-logo">
-                        <img src="img/placeholder.png" width="164" height="36" alt="Device"/>
+                        <img src="img/footer-logo.png" width="163" height="36" alt="Device"/>
                     </a>
                     <ul class="user-links footer-user-links">
                         <li class="login-link"><a href="login.html">Войти</a></li>
@@ -266,7 +268,7 @@
                     </ul>
                     <p class="footer-copyright">
                         <a class="footer-copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss">
-                            <img src="img/placeholder.png" width="27" height="35" alt="HtmlAcademy"/>
+                            <img src="img/logo-html.svg" width="27" height="35" alt="HtmlAcademy"/>
                         </a>
                     </p>
                 </div>

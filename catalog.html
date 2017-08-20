@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>HTML Academy: Девайс</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
     </head>
 
     <body>
@@ -10,7 +11,7 @@
             <header class="main-header">
 
                 <a class="logo main-header-logo">
-                    <img src="img/placeholder.png" alt="DEVICE" width="162" height="87"/>
+                    <img src="img/header-logo.png" alt="DEVICE" width="163" height="36"/>
                 </a>
 
                 <form class="site-search" action="https://echo.htmlacademy.ru" method="get">
@@ -60,10 +61,10 @@
                     </ul>
                 </header>
                 <section class="filters">
-                    <h2>Фильтр:</h2>
+                    <h2 class="form-title filters-title">Фильтр:</h2>
                     <form class="filter-form" method="get" action="https://echo.htmlacademy.ru">
                         <fieldset>
-                            <legend>Стоимость</legend>
+                            <legend class="fieldset-title">Стоимость</legend>
                             <div class="range-slider price-range-slider">
                                 <span class="range-slider-handle">
                                     <span class="price-range-min-value"> от 0</span>
@@ -75,7 +76,7 @@
                             <input type="hidden" name="price-range">
                         </fieldset>
                         <fieldset>
-                            <legend>Цвет</legend>
+                            <legend class="fieldset-title">Цвет</legend>
                             <ul class="filter-options-list">
                                 <li>
                                     <label><input class="visually-hidden filter-input filter-input-checkbox"
@@ -100,7 +101,7 @@
                             </ul>
                         </fieldset>
                         <fieldset>
-                            <legend>Bluetooth</legend>
+                            <legend class="fieldset-title">Bluetooth</legend>
                             <ul class="filter-options-list">
                                 <li>
                                     <label> <input class="visually-hidden filter-input filter-input-radio" type="radio"
@@ -119,7 +120,7 @@
                 <section class="catalog">
                     <h2 class="visibility-hidden">Моноподы для селфи</h2>
                     <section class="sort">
-                        <h2>Сортировка:</h2>
+                        <h2 class="form-title sort-title">Сортировка:</h2>
                         <form class="sort-form" method="get" action="https://echo.htmlacademy.ru">
                             <ul class="sort-options-list">
                                 <li>
@@ -161,47 +162,47 @@
                         <h2 class="visibility-hidden">Список товаров</h2>
                         <ul class="catalog-items-list">
                             <li class="catalog-item">
-                                <h3>
+                                <h3 class="item-name">
                                     <a href="catalog-item.html"> Любительская селфи-палка</a>
                                 </h3>
                                 <p>
                                     <a href="catalog-item.html">
-                                        <img src="img/placeholder.png" width="360" height="380"
+                                        <img src="img/item-1.jpg" width="360" height="380"
                                              alt="Любительская селфи-палка"/>
                                     </a>
                                 </p>
                                 <b class="item-price">500 руб.</b>
                             </li>
                             <li class="catalog-item">
-                                <h3>
+                                <h3 class="item-name">
                                     <a href="catalog-item.html"> Профессиональная селфи-палка</a>
                                 </h3>
                                 <p>
                                     <a href="catalog-item.html">
-                                        <img src="img/placeholder.png" width="360" height="380"
+                                        <img src="img/item-2.jpg" width="360" height="380"
                                              alt="Любительская селфи-палка"/>
                                     </a>
                                 </p>
                                 <b class="item-price">500 руб.</b>
                             </li>
                             <li class="catalog-item">
-                                <h3>
+                                <h3 class="item-name">
                                     <a href="catalog-item.html"> Непотопляемая селфи-палка</a>
                                 </h3>
                                 <p>
                                     <a href="catalog-item.html">
-                                        <img src="img/placeholder.png" width="360" height="380"
+                                        <img src="img/item-3.jpg" width="360" height="380"
                                              alt="Любительская селфи-палка"/>
                                     </a>
                                 </p>
                                 <b class="item-price">500 руб.</b>
                             </li>
                             <li class="catalog-item new-item">
-                                <h3>
+                                <h3 class="item-name">
                                     <a href="catalog-item.html"> Селфи-палка "Следуй за мной" </a>
                                 </h3>
                                 <p>
-                                    <img src="img/placeholder.png" width="360" height="380"
+                                    <img src="img/item-4.jpg" width="360" height="380"
                                          alt="Любительская селфи-палка"/>
                                 </p>
                                 <b class="item-price">500 руб.</b>
@@ -227,7 +228,7 @@
             <footer class="main-footer">
                 <div class="footer-top">
                     <a class="logo main-footer-logo" href="index.html">
-                        <img src="img/placeholder.png" width="164" height="36" alt="DEVICE"/>
+                        <img src="img/footer-logo.png" width="163" height="36" alt="DEVICE"/>
                     </a>
                     <ul class="user-links footer-user-links">
                         <li class="logout-link">
@@ -258,7 +259,7 @@
                     </ul>
                     <p class="footer-copyright">
                         <a class="footer-copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss">
-                            <img src="img/placeholder.png" width="27" height="35" alt="HtmlAcademy"/>
+                            <img src="img/logo-html.svg" width="27" height="35" alt="HtmlAcademy"/>
                         </a>
                     </p>
                 </div>
