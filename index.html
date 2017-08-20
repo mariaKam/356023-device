@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>HTML Academy: Девайс</title>
-        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
     </head>
 
     <body>
@@ -15,7 +15,8 @@
                 </a>
 
                 <form class="site-search" action="https://echo.htmlacademy.ru" method="get">
-                    <input type="text" placeholder="Поиск по сайту">
+                    <label class="visually-hidden" for="site-search">Поиск по сайту</label>
+                    <input type="text" placeholder="Поиск по сайту" id="site-search">
                     <button type="submit" class="search-btn">Найти</button>
                 </form>
                 <ul class="user-links header-user-links">
@@ -132,50 +133,63 @@
 
                     <ul class="product-categories-list">
                         <li class="category-virtual-reality">
-                            <a href="catalog.html"><span class="category-icon"></span></a>
-                            <h3 class="category-name"><a href="catalog.html">Виртуальная реальность</a></h3>
+                            <a href="catalog.html">
+                                <span class="category-icon"></span>
+                                <h3 class="category-name">Виртуальная реальность</h3>
+                            </a>
                         </li>
                         <li class="category-selfie-monopod">
-                            <a href="catalog.html"><span class="category-icon"></span></a>
-                            <h3 class="category-name"><a href="catalog.html">Моноподы для селфи</a></h3>
+                            <a href="catalog.html">
+                                <span class="category-icon"></span>
+                                <h3 class="category-name">Моноподы для селфи</h3>
+                            </a>
                         </li>
                         <li class="category-action-camera">
-                            <a href="catalog.html"><span class="category-icon"></span></a>
-                            <h3 class="category-name"><a href="catalog.html">Экшн-камеры</a></h3>
+                            <a href="catalog.html">
+                                <span class="category-icon"></span>
+                                <h3 class="category-name">Экшн-камеры</h3>
+                            </a>
                         </li>
                         <li class="category-fitness-bracelet">
-                            <a href="catalog.html"><span class="category-icon"></span></a>
-                            <h3 class="category-name"><a href="catalog.html">Фитнес-браслеты</a></h3>
+                            <a href="catalog.html">
+                                <span class="category-icon"></span>
+                                <h3 class="category-name">Фитнес-браслеты</h3>
+                            </a>
                         </li>
                         <li class="category-smart-watch">
-                            <a href="catalog.html"><span class="category-icon"></span></a>
-                            <h3 class="category-name"><a href="catalog.html">Умные часы</a></h3>
+                            <a href="catalog.html">
+                                <span class="category-icon"></span>
+                                <h3 class="category-name">Умные часы</h3>
+                            </a>
                         </li>
                         <li class="category-quadrupter">
-                            <a href="catalog.html"><span class="category-icon"></span></a>
-                            <h3 class="category-name"><a href="catalog.html">Квадрокоптеры</a></h3>
+                            <a href="catalog.html">
+                                <span class="category-icon"></span>
+                                <h3 class="category-name">Квадрокоптеры</h3>
+                            </a>
                         </li>
                     </ul>
                 </section>
 
                 <section class="services services-tabs">
+                    <h2 class="visually-hidden">Услуги</h2>
                     <ul class="tabs-nav">
-                        <li><a href="#delivery">Доставка</a></li>
-                        <li><a href="#warranty">Гарантия</a></li>
-                        <li><a href="#credit">Кредит</a></li>
+                        <li><a href="#delivery-tab">Доставка</a></li>
+                        <li><a href="#warranty-tab">Гарантия</a></li>
+                        <li><a href="#credit-tab">Кредит</a></li>
                     </ul>
                     <div class="tabs-content">
-                        <div class="tab-pane" id="delivery">
+                        <div class="tab-pane" id="delivery-tab">
                             <h2 class="tab-title">Доставка</h2>
                             <p>Мы с удовольствием доставим товар прямо к вашему подъезду совершенно бесплатно! Ведь мы
                                 неплохо заработаем, поднимая его на ваш этаж.</p>
                         </div>
-                        <div class="tab-pane" id="warranty">
+                        <div class="tab-pane" id="warranty-tab">
                             <h2 class="tab-title">Гарантия</h2>
                             <p>Если из-за возгорания купленого у нас товара у вас сгорит дом - не переживайте, мы
                                 выдадим вам новый. Товар, не дом, конечно же.</p>
                         </div>
-                        <div class="tab-pane" id="credit">
+                        <div class="tab-pane" id="credit-tab">
                             <h2 class="tab-title">Кредит</h2>
                             <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее
                                 выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
@@ -219,7 +233,6 @@
                     </ul>
                     <a class="btn" href="about-us.html">Подробнее о нас</a>
                 </section>
-
                 <section class="contacts">
                     <h2 class="section-title">Контакты</h2>
                     <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность
@@ -292,12 +305,16 @@
                     </p>
                     <button type="submit" class="btn">Отправить</button>
                 </form>
-                <span class="modal-close">Закрыть</span>
+                <button type="button" class="modal-close">Закрыть</button>
             </section>
 
             <section class="modal modal-map">
                 <h2 class="visually-hidden">Как до нас добраться</h2>
-                <span class="modal-close">Закрыть</span>
+                <p>
+                    <img src="img/modal-map.jpg" width="960" height="559"
+                         alt="Офис компании по адресу г. Москва, ул. Строителей, 15"/>
+                </p>
+                <button type="button" class="modal-close">Закрыть</button>
             </section>
         </div>
     </body>
