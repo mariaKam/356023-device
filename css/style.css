@@ -1,37 +1,734 @@
-
-body {
-    font-size: 15px;
-    line-height: 2;
-    color: rgb(70, 70, 70);
-    font-weight: normal;
-    font-family: "OpenSans", Arial, sans-serif;
+@font-face {
+    font-family: "Gilroy";
+    src: url('../fonts/gilroy-extrabold-webfont.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
 }
 
-.page-title, .section-title, .slide-title, .tab-title {
+@font-face {
+    font-family: "Gilroy";
+    src: url('../fonts/gilroy-light-webfont.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 300;
+    color: rgb(70, 70, 70);
+    letter-spacing: 0.01em;
+
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.btn {
+    position: relative;
+
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 18px;
+    line-height: normal;
+    font-weight: 900;
+    color: black;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+
+    background-color: transparent;
+    border: none;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn:hover::before,
+.btn:focus::before {
+    height: 40px;
+}
+
+.btn:focus,
+.btn:active {
+    outline: none;
+}
+
+.btn:active {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+/*---это на будущее---*/
+
+/*.btn::before {*/
+/*content: "";*/
+/*display: block;*/
+/*width: 100%;*/
+/*z-index: -1;*/
+/*height: 5px;*/
+/*position: absolute;*/
+/*top: 0;*/
+/*bottom: 0;*/
+/*margin: auto 0;*/
+/*background-color: #f0c52e;*/
+/*}*/
+
+/*---titles---*/
+
+.page-title,
+.section-title,
+.slide-title,
+.tab-title {
+    font-family: "Gilroy", Arial, sans-serif;
     font-size: 47px;
     line-height: 1.2;
-    color: rgb(0, 0, 0);
-    font-weight: bold;
+    font-weight: 900;
+    color: black;
+}
+
+/* ==========================================================================
+   Navigation menus, links and logotypes
+   ========================================================================== */
+
+.user-links,
+.main-nav ul,
+.site-nav,
+.footer-social {
+    list-style: none;
+}
+
+.user-links a,
+.sub-menu a {
+    font: inherit;
+    font-size: 15px;
+    line-height: 36px;
+}
+
+.user-links a:hover,
+.user-links a:focus,
+.sub-menu a:hover,
+.sub-menu a:focus {
+    color: inherit;
+
+    opacity: 0.6;
+    outline: none;
+}
+
+.user-links a:active,
+.sub-menu a:active {
+    color: inherit;
+
+    opacity: 0.3;
+}
+
+.site-nav > li > a {
     font-family: "Gilroy", Arial, sans-serif;
-    /*letter-spacing: 10?;*/
+    font-size: 18px;
+    line-height: normal;
+    font-weight: 900;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+.site-nav > li > a:hover, .site-nav > li > a:focus {
+    color: inherit;
+
+    opacity: 0.6;
+    outline: none;
+}
+
+.site-nav > li > a:active {
+    color: inherit;
+
+    opacity: 0.2;
+}
+
+.logo:hover img,
+.logo:focus img,
+.footer-copyright-logo:hover img,
+.footer-copyright-logo:focus img {
+    opacity: 0.6;
+}
+
+.logo:active img,
+.footer-copyright-logo:active img {
+    opacity: 0.3;
+}
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+.main-header {
+    background-color: #f8e297;
+}
+
+/*---site search---*/
+
+.site-search input {
+    font: inherit;
+    color: black;
+
+    background-color: transparent;
+    border: none;
+}
+
+.site-search input::placeholder {
+    font: inherit;
+    font-size: 15px;
+    line-height: 36px;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.site-search input:hover::placeholder {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.site-search input:focus {
+    border-bottom: 2px solid black;
+    outline: none;
+}
+
+.site-search input:focus + .search-btn {
+    visibility: visible;
+}
+
+.search-btn {
+    font: inherit;
+    font-size: 15px;
+    line-height: 36px;
+    color: black;
+
+    background-color: transparent;
+    border: 2px solid black;
+    visibility: hidden;
+}
+
+.search-btn:hover,
+.search-btn:focus {
+    color: white;
+
+    background-color: black;
+    outline: none;
+}
+
+.search-btn:active {
+    color: rgba(255, 255, 255, 0.3);
+
+    outline: none;
+}
+
+.search-btn:visited {
+    outline: none;
+}
+
+/*---header nav---*/
+
+.header-user-links a,
+.header-site-nav a {
+    color: black;
+}
+
+.header-user-links .logout-link a {
+    opacity: 0.3;
+}
+
+/* ==========================================================================
+   Slider
+   ========================================================================== */
+
+.slider-indicators {
+    list-style: none;
+}
+
+.slider .indicator {
+    position: relative;
+
+    width: 10px;
+    height: 10px;
+
+    background-image: url(../img/icons/slider-button-empty.svg);
+    background-size: 10px;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    cursor: pointer;
+}
+
+.slider .indicator.active {
+    background-image: url(../img/icons/slider-button.svg);
+}
+
+.slide-number {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 179px;
+    line-height: 179px;
+    font-weight: 900;
+    color: white;
+}
+
+.features-value td {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 36px;
+    line-height: normal;
+    color: black;
+}
+
+.features-label td {
+    font: inherit;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+/* ==========================================================================
+   Product categories
+   ========================================================================== */
+
+.product-categories-list {
+    list-style: none;
+}
+
+.product-categories-list .category-name {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 18px;
+    line-height: normal;
+    font-weight: 900;
+    color: black;
+    text-align: left;
+}
+
+.category-icon {
+    position: relative;
+
+    display: block;
+    width: 160px;
+    height: 160px;
+
+    background-color: #f8e296;
+}
+
+.category-icon svg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+}
+
+.category-selfie-monopod svg {
+    top: auto;
+
+    margin: 0 auto;
+}
+
+.product-category a:hover .category-icon,
+.product-category a:focus .category-icon {
+    background-color: #f1c52e;
+}
+
+.product-category a:focus {
+    outline: none;
+}
+
+.product-category a:active .category-name,
+.product-category a:active svg {
+    opacity: 0.2;
+}
+
+/* ==========================================================================
+   Services tabs
+   ========================================================================== */
+
+.services {
+    background-color: #e5e5e5;
+}
+
+.tabs-nav {
+    list-style: none;
+    border-right: 7px solid black;
+}
+
+.tabs-nav-item-active {
+    color: #f7e184;
+
+    background-color: black;
+}
+
+/* ==========================================================================
+   Product brands
+   ========================================================================== */
+
+.product-brands-list {
+    list-style: none;
+}
+
+.brand-logo {
+    filter: grayscale(100%) opacity(20%);
+}
+
+.brand-logo:hover {
+    filter: none;
+}
+
+/* ==========================================================================
+   About us
+   ========================================================================== */
+
+.transport-companies-list {
+    list-style: none;
+}
+
+.transport-companies-list li {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-weight: 900;
+    color: black;
+    letter-spacing: 0.02em;
+}
+
+/* ==========================================================================
+   Main footer
+   ========================================================================== */
+
+.main-footer {
+    color: white;
+
+    background-color: #464646;
+}
+
+.site-nav.footer-site-nav a,
+.footer-user-links a,
+.phone-link {
+    color: white;
+}
+
+/*---это на будущее---*/
+
+/*.footer-social a {*/
+/**/
+/*display: inline-block;*/
+/*width: 20px;*/
+/*height: 20px;*/
+/**/
+/*???*/
+/*font-size: 0;*/
+/*???*/
+/**/
+/*background-image: url(../img/icons/fb.svg);*/
+/*background-repeat: no-repeat;*/
+/*background-position: center center;*/
+/*background-size: 20px;*/
+/*}*/
+
+/* ==========================================================================
+   Modals
+   ========================================================================== */
+
+.contact-form input,
+.contact-form textarea {
+    font: inherit;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    color: rgba(70, 70, 70, 0.4);
+    letter-spacing: 0;
+
+    background-color: #f2f2f2;
+    border: none;
+}
+
+.contact-form input:hover,
+.contact-form textarea:hover {
+    background-color: #ebebeb;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    color: rgba(70, 70, 70, 1);
+
+    background-color: white;
+    border: 2px solid #f7e296;
+    outline: none;
+}
+
+.contact-form input:invalid {
+    background-color: #f6dada;
+}
+
+.modal-close {
+    width: 60px;
+    height: 60px;
+
+    /*???*/
+    font-size: 0;
+    /*???*/
+
+    background-color: transparent;
+    background-image: url(../img/icons/modal-close.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: none;
+    opacity: 0.5;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+    opacity: 1;
+    cursor: pointer;
+    outline: none;
+}
+
+.modal-close:active {
+    opacity: 0.3;
+    outline: none;
+}
+
+/* ==========================================================================
+   Breadcrumbs
+   ========================================================================== */
+
+.breadcrumbs {
+    list-style: none;
+}
+
+.breadcrumbs-item a {
+    font: inherit;
+    font-size: 14px;
+    line-height: 36px;
+    color: black;
+
+    opacity: 0.3;
+}
+
+.breadcrumbs-item a:not(.disabled):hover,
+.breadcrumbs-item a:not(.disabled):focus {
+    opacity: 0.6;
+}
+
+.breadcrumbs-item a:not(.disabled):active {
+    opacity: 0.1;
+}
+
+/* ==========================================================================
+   Catalog filters and sort
+   ========================================================================== */
+
+.filters {
+    background-color: #efefef;
 }
 
 .form-title {
-    font-size: 16px;
-    line-height: 1.2;
-    color: rgb(0, 0, 0);
-    font-weight: bold;
     font-family: "Gilroy", Arial, sans-serif;
-    /*letter-spacing: 200?;*/
+    font-size: 16px;
+    line-height: normal;
+    font-weight: 900;
+    color: black;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
 }
 
-/*.item-name {*/
-    /*font-size: 18px;*/
-    /*font-family: "Gilroy";*/
-    /*color: rgb(0, 0, 0);*/
-    /*font-weight: bold;*/
-    /*line-height: 1.2;*/
-    /*text-align: left;*/
-/*}*/
+.filters-title {
+    background-color: #dcdcdc;
+}
 
+.filter-name {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 18px;
+    line-height: normal;
+    font-weight: 900;
+    color: black;
+}
+
+fieldset {
+    border: none;
+}
+
+.filter-options-list,
+.sort-options-list {
+    list-style: none;
+}
+
+.range-slider-handle {
+    position: relative;
+
+    display: block;
+    width: 30px;
+    height: 30px;
+
+    background-image: url(../img/filter-button.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer;
+}
+
+.price-range-value {
+    position: absolute;
+    bottom: -20px;
+
+    line-height: 22px;
+    letter-spacing: 0;
+}
+
+.filters label {
+    font: inherit;
+    font-size: 14px;
+    line-height: 40px;
+    color: black;
+}
+
+.sort {
+    background-color: #ebebeb;
+}
+
+.sort label {
+    font: inherit;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0;
+    color: black;
+    opacity: 0.3;
+}
+
+.sort label:hover {
+    opacity: 0.6;
+}
+
+.sort label:active,
+input[type="radio"]:checked + label {
+    opacity: 1;
+}
+
+.sort-arrow {
+    opacity: 0.2;
+}
+
+.sort-arrow:hover,
+.sort-arrow:focus {
+    opacity: 0.4;
+}
+
+.sort-arrow:active {
+    opacity: 1;
+}
+
+/* ==========================================================================
+   Catalog items
+   ========================================================================== */
+
+.catalog-items-list {
+    list-style: none;
+}
+
+.catalog-item {
+    position: relative;
+
+    width: 360px;
+}
+
+.item-name a {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 18px;
+    line-height: normal;
+    font-weight: 900;
+    color: black;
+}
+
+.item-price {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 16px;
+    line-height: normal;
+}
+
+.item-photo {
+    position: relative;
+}
+
+.item-actions {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 225px;
+
+    margin: 0 auto;
+
+    text-align: center;
+
+    visibility: hidden;
+}
+
+.catalog-item:hover .item-photo {
+    opacity: 0.6;
+}
+
+.catalog-item:hover .item-actions {
+    visibility: visible;
+}
+
+.item-compare {
+    font: inherit;
+    font-size: 13px;
+    color: black;
+    line-height: 36px;
+
+    opacity: 0.5;
+}
+
+.item-compare:hover,
+.item-compare:focus {
+    opacity: 1;
+}
+
+.item-compare:active {
+    opacity: 0.2;
+}
+
+/* ==========================================================================
+   Pagination
+   ========================================================================== */
+
+.pagination {
+    background-color: #ebebeb;
+}
+
+.pagination-list {
+    list-style: none;
+}
+
+.pagination-btn:hover,
+.pagination-btn:focus {
+    background-color: #d9d9d9;
+}
+
+.pagination-item a {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 16px;
+    line-height: normal;
+    font-weight: 900;
+    color: black;
+    letter-spacing: 0.2em;
+
+    opacity: 0.3;
+}
+
+.pagination-item:not(.pagination-item-current) a:hover,
+.pagination-item:not(.pagination-item-current) a:focus {
+    opacity: 0.6;
+}
+
+.pagination-item-current a,
+.pagination-item:not(.pagination-item-current) a:active {
+    opacity: 1;
+}
 
