@@ -374,12 +374,43 @@ img {
     list-style: none;
 }
 
-.brand-logo {
-    filter: grayscale(100%) opacity(20%);
+.product-brands-list .product-brand{
+    width: 260px;
+    position: relative;
 }
 
-.brand-logo:hover {
-    filter: none;
+.product-brands-list .product-brand::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    content: "";
+    display: block;
+    width: 260px;
+    height: 100px;
+
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.product-brand:hover::after{
+    opacity: 0;
+}
+
+.dji-brand::after{
+    background-image: url(../img/logo-1.jpg);
+}
+
+.sri-gadgets-brand::after{
+    background-image: url(../img/logo-2.jpg);
+}
+
+.go-pro-brand::after{
+    background-image: url(../img/logo-3.jpg);
+}
+
+.vive-brand::after{
+    background-image: url(../img/logo-4.jpg);
 }
 
 /* ==========================================================================
