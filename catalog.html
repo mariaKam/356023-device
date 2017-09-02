@@ -18,8 +18,8 @@
 
                     <div class="header-top">
                         <form class="site-search" action="https://echo.htmlacademy.ru" method="get">
-                            <label class="visually-hidden" for="site-search">Поиск по сайту</label>
-                            <input type="text" placeholder="Поиск по сайту" id="site-search">
+                            <label class="visually-hidden" for="site-search-field">Поиск по сайту</label>
+                            <input type="text" placeholder="Поиск по сайту" id="site-search-field">
                             <button type="submit" class="search-btn">Найти</button>
                         </form>
                         <ul class="user-links header-user-links">
@@ -34,18 +34,20 @@
                         <ul class="site-nav header-site-nav">
                             <li class="catalog-link contains-sub-menu"><a href="catalog.html">Каталог товаров</a>
                                 <div class="sub-menu">
-                                    <ul class="video-products">
-                                        <li><a href="catalog.html">Виртуальная реальность</a></li>
-                                        <li><a href="catalog.html">Моноподы для селфи</a></li>
-                                        <li><a href="catalog.html">Экшн-камеры</a></li>
-                                    </ul>
-                                    <ul class="wearable-products">
-                                        <li><a href="catalog.html">Фитнес-браслеты</a></li>
-                                        <li><a href="catalog.html">Умные часы</a></li>
-                                    </ul>
-                                    <ul class="quodrupter-products">
-                                        <li><a href="catalog.html">Квадрокоптеры</a></li>
-                                    </ul>
+                                    <div class="inner-container">
+                                        <ul class="video-products">
+                                            <li><a href="catalog.html">Виртуальная реальность</a></li>
+                                            <li><a href="catalog.html">Моноподы для селфи</a></li>
+                                            <li><a href="catalog.html">Экшн-камеры</a></li>
+                                        </ul>
+                                        <ul class="wearable-products">
+                                            <li><a href="catalog.html">Фитнес-браслеты</a></li>
+                                            <li><a href="catalog.html">Умные часы</a></li>
+                                        </ul>
+                                        <ul class="quodrupter-products">
+                                            <li><a href="catalog.html">Квадрокоптеры</a></li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </li>
                             <li class="delivery-link"><a href="delivery.html">Доставка</a></li>
@@ -77,15 +79,17 @@
                     <section class="filters">
                         <h2 class="form-title filter-title">Фильтр:</h2>
                         <form class="filter-form" method="get" action="https://echo.htmlacademy.ru">
-                            <fieldset>
+                            <fieldset class="price-range-input-wrapper">
                                 <legend class="filter-name">Стоимость</legend>
                                 <div class="range-slider price-range-slider">
-                        <span class="range-slider-handle">
-                        <span class="price-range-value price-range-min-value"> от 0</span>
-                        </span>
-                                    <span class="range-slider-handle">
-                        <span class="price-range-value price-range-max-value"> до 5000</span>
-                        </span>
+                                    <div class="range-slider-active">
+                                       <span class="range-slider-handle left-handle">
+                                         <span class="price-range-value price-range-min-value"> от 0</span>
+                                       </span>
+                                        <span class="range-slider-handle right-handle">
+                                         <span class="price-range-value price-range-max-value"> до 5000</span>
+                                       </span>
+                                    </div>
                                 </div>
                                 <input type="hidden" name="price-range">
                             </fieldset>
@@ -145,7 +149,7 @@
                     </section>
 
                     <section class="catalog">
-                        <!--<h2 class="visually-hidden">Моноподы для селфи</h2>-->
+                        <h2 class="visually-hidden">Моноподы для селфи</h2>
                         <section class="sort">
                             <h2 class="form-title sort-title">Сортировка:</h2>
                             <form class="sort-form" method="get" action="https://echo.htmlacademy.ru">
@@ -185,9 +189,9 @@
                                 </ul>
                             </form>
                         </section>
-                        <!---->
+
                         <section class="catalog-items">
-                            <!--<h2 class="visually-hidden">Список товаров</h2>-->
+                            <h2 class="visually-hidden">Список товаров</h2>
                             <ul class="catalog-items-list">
                                 <li class="catalog-item">
                                     <h3 class="item-name">
@@ -211,12 +215,12 @@
                                         <img class="item-photo" src="img/item-2.jpg" width="360" height="380"
                                              alt="Любительская селфи-палка"/>
                                     </p>
-                                        <p class="item-actions">
-                                            <a class="btn" href="#">В корзину</a><br>
-                                            <a class="item-compare" href="#">Добавить к сравнению</a>
-                                        </p>
+                                    <p class="item-actions">
+                                        <a class="btn" href="#">В корзину</a><br>
+                                        <a class="item-compare" href="#">Добавить к сравнению</a>
+                                    </p>
 
-                                    <b class="item-price">500 руб.</b>
+                                    <b class="item-price">1 500 руб.</b>
 
                                 </li>
                                 <li class="catalog-item">
@@ -227,7 +231,7 @@
                                         <img class="item-photo" src="img/item-3.jpg" width="360" height="380"
                                              alt="Любительская селфи-палка"/>
                                     </p>
-                                    <b class="item-price">500 руб.</b>
+                                    <b class="item-price">2 500 руб.</b>
                                     <p class="item-actions">
                                         <a class="btn" href="#">В корзину</a><br>
                                         <a class="item-compare" href="#">Добавить к сравнению</a>
@@ -235,13 +239,13 @@
                                 </li>
                                 <li class="catalog-item new-item">
                                     <h3 class="item-name">
-                                        <a href="catalog-item.html"> Селфи-палка "Следуй за мной" </a>
+                                        <a href="catalog-item.html"> Селфи-палка «Следуй за мной» </a>
                                     </h3>
                                     <p>
                                         <img class="item-photo" src="img/item-4.jpg" width="360" height="380"
                                              alt="Любительская селфи-палка"/>
                                     </p>
-                                    <b class="item-price">500 руб.</b>
+                                    <b class="item-price">4 500 руб.</b>
                                     <p class="item-actions">
                                         <a class="btn" href="#">В корзину</a><br>
                                         <a class="item-compare" href="#">Добавить к сравнению</a>
