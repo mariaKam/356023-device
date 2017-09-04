@@ -737,15 +737,22 @@ img {
     box-sizing: border-box;
     text-align: center;
     margin-bottom: 24px;
+    z-index: 1;
 }
 
-.tabs-nav-item-active {
+.tabs-nav-item-active,
+.tabs-nav-item:active {
     width: 100%;
 
     text-align: left;
     color: #f7e184;
 
     background-color: black;
+}
+
+.tabs-nav-item-active::before,
+.tabs-nav-item:active::before {
+    display: none;
 }
 
 .tabs-content {
@@ -871,7 +878,6 @@ img {
     margin: 8px 0 60px;
 }
 
-
 .transport-companies-list {
     padding-left: 36px;
     margin: 70px 0 59px;
@@ -906,7 +912,6 @@ img {
     border: 2px solid #e3e3e3;
     border-radius: 50%;
 }
-
 
 /* ==========================================================================
    Main footer
@@ -1238,25 +1243,15 @@ img {
     position: relative;
     width: 100%;
     margin: 0 0 22px;
-    padding-top: 12px;
+    padding-top: 10px;
 
     font-family: "Gilroy", Arial, sans-serif;
     font-size: 18px;
     line-height: normal;
     font-weight: 900;
     color: black;
-}
 
-.filter-name::before {
-    content: "";
-
-    position: absolute;
-    top: 0px;
-
-    width: 100%;
-    display: block;
-    height: 2px;
-    background: black;
+    border-top: 2px solid black;
 }
 
 .filter-options-list,
@@ -1332,6 +1327,12 @@ img {
     font-size: 14px;
     line-height: 40px;
     color: black;
+}
+
+.filter-btn,
+.add-to-cart-btn {
+    box-sizing: border-box;
+    min-width: 201px;
 }
 
 /* ==========================================================================
