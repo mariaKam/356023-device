@@ -317,9 +317,6 @@
                         </p>
                         <img src="img/map.jpg" width="560" height="222" alt="г. Москва, ул. Строителей, 15"
                              class="contacts-map-image">
-                        <!--<iframe width="560" height="222" class="contacts-map-interactive"-->
-                        <!--src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJVYlcX_ZMtUYRHlBVzQxxlAY&key=AIzaSyDGS-M4u3Ve0HbcdXrRxklKUpEL4heQoLs"-->
-                        <!--allowfullscreen></iframe>-->
 
                         <a class="btn contacts-btn" href="#modal-contact">Напишите нам</a>
                     </section>
@@ -379,36 +376,41 @@
                 </div>
             </div>
         </footer>
-        <!---->
-        <!--<section class="modal modal-contact" id="modal-contact">-->
-        <!--<h2 class="visually-hidden">Форма обратной связи</h2>-->
-        <!--<form class="contact-form" method="post" action="https://up.echo.htmlacademy.ru">-->
-        <!--<p>-->
-        <!--<label for="contact-name">Ваше имя</label>-->
-        <!--<input type="text" name="name" id="contact-name" value=""-->
-        <!--placeholder="Представтесь, пожалуйста">-->
-        <!--</p>-->
-        <!--<p>-->
-        <!--<label for="contact-email">Ваш e-mail</label>-->
-        <!--<input type="text" name="email" id="contact-email" value="" placeholder="Для отправки ответа">-->
-        <!--</p>-->
-        <!--<p>-->
-        <!--<label for="contact-message">Текст письма:</label>-->
-        <!--<textarea name="date" id="contact-message" placeholder="В свободной форме"></textarea>-->
-        <!--</p>-->
-        <!--<button type="submit" class="btn">Отправить</button>-->
-        <!--</form>-->
-        <!--<button type="button" class="modal-close">Закрыть</button>-->
-        <!--</section>-->
-        <!---->
-        <!--<section class="modal modal-map">-->
-        <!--<h2 class="visually-hidden">Как до нас добраться</h2>-->
-        <!--<p>-->
-        <!--<img src="img/modal-map.jpg" width="960" height="559"-->
-        <!--alt="Офис компании по адресу г. Москва, ул. Строителей, 15"/>-->
-        <!--</p>-->
-        <!--<button type="button" class="modal-close">Закрыть</button>-->
-        <!--</section>-->
-        <!--</div>-->
+
+        <section class="modal modal-contact" id="modal-contact">
+            <h2 class="visually-hidden">Форма обратной связи</h2>
+            <form class="contact-form" method="post" action="https://up.echo.htmlacademy.ru">
+                <div class="inputs-wrapper">
+                    <p class="input-left">
+                        <label for="contact-name">Ваше имя</label>
+                        <input type="text" name="name" id="contact-name" value=""
+                               placeholder="Представтесь, пожалуйста">
+                    </p>
+                    <p class="input-right">
+                        <label for="contact-email">Ваш e-mail</label><br>
+                        <input type="text" name="email" id="contact-email" value="" placeholder="Для отправки ответа">
+                    </p>
+                </div>
+                <p>
+                    <label for="contact-message">Текст письма:</label><br>
+                    <textarea name="date" id="contact-message" rows="7" placeholder="В свободной форме"></textarea>
+                </p>
+                <button type="submit" class="btn send-btn">Отправить</button>
+            </form>
+            <button type="button" class="modal-close"><span class="visually-hidden">Закрыть</span></button>
+        </section>
+
+        <section class="modal modal-map">
+            <h2 class="visually-hidden">Как до нас добраться</h2>
+            <p>
+                <img src="img/modal-map.jpg" width="960" height="559" class="modal-map-image"
+                     alt="Офис компании по адресу г. Москва, ул. Строителей, 15"/>
+                <iframe width="960" height="559" class="contacts-map-interactive"
+                        src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJVYlcX_ZMtUYRHlBVzQxxlAY&key=AIzaSyDGS-M4u3Ve0HbcdXrRxklKUpEL4heQoLs"
+                        allowfullscreen></iframe>
+            </p>
+            <button type="button" class="modal-close"><span class="visually-hidden">Закрыть</span></button>
+        </section>
+
     </body>
 </html>

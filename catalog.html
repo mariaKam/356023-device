@@ -9,6 +9,7 @@
     </head>
 
     <body class="inner-page">
+        <!--<img src="img/device-catalog.jpg" class="new"/>-->
         <div class="container">
             <header class="main-header">
                 <div class="inner-container">
@@ -79,52 +80,64 @@
                     <section class="filters">
                         <h2 class="form-title filter-title">Фильтр:</h2>
                         <form class="filter-form" method="get" action="https://echo.htmlacademy.ru">
-                            <fieldset class="price-range-input-wrapper">
+                            <fieldset>
                                 <legend class="filter-name">Стоимость</legend>
-                                <div class="range-slider price-range-slider">
-                                    <div class="range-slider-active">
+                                <div class="price-range-input-wrapper">
+                                    <div class="range-slider price-range-slider">
+                                        <div class="range-slider-active">
                                        <span class="range-slider-handle left-handle">
                                          <span class="price-range-value price-range-min-value"> от 0</span>
                                        </span>
-                                        <span class="range-slider-handle right-handle">
+                                            <span class="range-slider-handle right-handle">
                                          <span class="price-range-value price-range-max-value"> до 5000</span>
                                        </span>
+                                        </div>
                                     </div>
+                                    <input type="hidden" name="price-range">
                                 </div>
-                                <input type="hidden" name="price-range">
                             </fieldset>
                             <fieldset>
                                 <legend class="filter-name">Цвет</legend>
                                 <ul class="filter-options-list">
                                     <li>
-                                        <input class="visually-hidden filter-input filter-input-checkbox"
-                                               id="filter-black"
-                                               type="checkbox" name="black" checked>
-                                        <label for="filter-black">Черный</label>
+                                        <label for="filter-black">
+                                            <input class="visually-hidden filter-input filter-input-checkbox"
+                                                   id="filter-black" type="checkbox" name="black" checked>
+                                            <span class="checkbox-indicator"></span>
+                                            Черный
+                                        </label>
                                     </li>
                                     <li>
-                                        <input class="visually-hidden filter-input filter-input-checkbox"
-                                               id="filter-white"
-                                               type="checkbox" name="white">
-                                        <label for="filter-white">Белый</label>
+                                        <label for="filter-white">
+                                            <input class="visually-hidden filter-input filter-input-checkbox"
+                                                   id="filter-white" type="checkbox" name="white">
+                                            <span class="checkbox-indicator"></span>
+                                            Белый
+                                        </label>
                                     </li>
                                     <li>
-                                        <input class="visually-hidden filter-input filter-input-checkbox"
-                                               id="filter-blue"
-                                               type="checkbox" name="blue" checked>
-                                        <label for="filter-blue">Синий</label>
+                                        <label for="filter-blue">
+                                            <input class="visually-hidden filter-input filter-input-checkbox"
+                                                   id="filter-blue" type="checkbox" name="blue" checked>
+                                            <span class="checkbox-indicator"></span>
+                                            Синий
+                                        </label>
                                     </li>
                                     <li>
-                                        <input class="visually-hidden filter-input filter-input-checkbox"
-                                               id="filter-red"
-                                               type="checkbox" name="red" checked>
-                                        <label for="filter-red">Красный</label>
+                                        <label for="filter-red">
+                                            <input class="visually-hidden filter-input filter-input-checkbox"
+                                                   id="filter-red" type="checkbox" name="red" checked>
+                                            <span class="checkbox-indicator"></span>
+                                            Красный
+                                        </label>
                                     </li>
                                     <li>
-                                        <input class="visually-hidden filter-input filter-input-checkbox"
-                                               id="filter-pink"
-                                               type="checkbox" name="pink">
-                                        <label for="filter-pink">Розовый</label>
+                                        <label for="filter-pink">
+                                            <input class="visually-hidden filter-input filter-input-checkbox"
+                                                   id="filter-pink" type="checkbox" name="pink">
+                                            <span class="checkbox-indicator"></span>
+                                            Розовый
+                                        </label>
                                     </li>
                                 </ul>
                             </fieldset>
@@ -132,14 +145,20 @@
                                 <legend class="filter-name">Bluetooth</legend>
                                 <ul class="filter-options-list">
                                     <li>
-                                        <input class="visually-hidden filter-input filter-input-radio" type="radio"
-                                               id="filter-bluetooth-yes" name="bluetooth" value="yes" checked>
-                                        <label for="filter-bluetooth-yes">Есть</label>
+                                        <label for="filter-bluetooth-yes">
+                                            <input class="visually-hidden filter-input filter-input-radio" type="radio"
+                                                   id="filter-bluetooth-yes" name="bluetooth" value="yes" checked>
+                                            <span class="radio-indicator"></span>
+                                            Есть
+                                        </label>
                                     </li>
                                     <li>
-                                        <input class="visually-hidden filter-input filter-input-radio" type="radio"
-                                               id="filter-bluetooth-no" name="bluetooth" value="no">
-                                        <label for="filter-bluetooth-no">Нет</label>
+                                        <label for="filter-bluetooth-no">
+                                            <input class="visually-hidden filter-input filter-input-radio" type="radio"
+                                                   id="filter-bluetooth-no" name="bluetooth" value="no">
+                                            <span class="radio-indicator"></span>
+                                            Нет
+                                        </label>
                                     </li>
                                 </ul>
                             </fieldset>
@@ -153,7 +172,7 @@
                         <section class="sort">
                             <h2 class="form-title sort-title">Сортировка:</h2>
                             <form class="sort-form" method="get" action="https://echo.htmlacademy.ru">
-                                <ul class="sort-options-list">
+                                <ul class="sort-options-list sort-type">
                                     <li>
                                         <input class="visually-hidden filter-input filter-input-radio" type="radio"
                                                name="sort" value="by-price" id="sort-price"
@@ -172,19 +191,23 @@
                                         <label for="sort-popular">По популярности</label>
                                     </li>
                                 </ul>
-                                <ul class="sort-options-list">
+                                <ul class="sort-options-list sort-order">
                                     <li>
-                                        <input class="visually-hidden filter-input filter-input-radio sort-arrow"
+                                        <input class="visually-hidden filter-input filter-input-radio"
                                                type="radio" name="display-order" value="ascending" id="sort-asc" checked
                                                onchange="this.form.submit()">
-                                        <label for="sort-asc" class="visually-hidden">По возрастанию</label>
+                                        <label for="sort-asc" class="sort-arrow arrow-top">
+                                            <span class="visually-hidden">По возрастанию</span>
+                                        </label>
                                     </li>
                                     <li>
-                                        <input class="visually-hidden filter-input filter-input-radio sort-arrow"
+                                        <input class="visually-hidden filter-input filter-input-radio"
                                                type="radio"
                                                name="display-order" value="descending" id="sort-desc"
                                                onchange="this.form.submit()">
-                                        <label for="sort-desc" class="visually-hidden">По убыванию</label>
+                                        <label for="sort-desc" class="sort-arrow arrow-bottom">
+                                            <span class="visually-hidden">По убыванию</span>
+                                        </label>
                                     </li>
                                 </ul>
                             </form>
