@@ -729,7 +729,6 @@ img {
     background-color: #f1c52e;
 }
 
-inline-block
 .product-category a:focus {
     outline: none;
 }
@@ -1402,7 +1401,7 @@ inline-block
 .filters-bg {
     position: absolute;
     top: 0;
-    right: 840px;
+    right: 852px;
     z-index: -1;
 
     width: 9000px;
