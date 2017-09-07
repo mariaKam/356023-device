@@ -23,16 +23,26 @@
                             <button type="submit" class="search-btn">Найти</button>
                         </form>
                         <ul class="user-links header-user-links">
-                            <li class="login-link hidden"><a href="login.html">Войти</a></li>
-                            <li class="user-name profile-link"><a href="profile.html">Валентин Петухов</a></li>
-                            <li class="logout-link"><a href="#">Выйти</a></li>
-                            <li class="compare-link"><a href="compare.html">Сравнить</a></li>
-                            <li class="cart-link"><a href="cart.html">Корзина</a></li>
+                            <li class="login-link header-login-link hidden">
+                                <a href="login.html">Войти</a>
+                            </li>
+                            <li class="profile-link header-profile-link user-name">
+                                <a href="profile.html">Валентин Петухов</a>
+                            </li>
+                            <li class="logout-link header-logout-link">
+                                <a href="#">Выйти</a>
+                            </li>
+                            <li class="compare-link header-compare-link">
+                                <a href="compare.html">Сравнить</a>
+                            </li>
+                            <li class="cart-link header-cart-link">
+                                <a href="cart.html">Корзина</a>
+                            </li>
                         </ul>
                     </div>
                     <nav class="main-nav">
                         <ul class="site-nav header-site-nav">
-                            <li class="catalog-link contains-sub-menu"><a href="catalog.html">Каталог товаров</a>
+                            <li class="catalog-link header-catalog-link sub-menu-link"><a href="catalog.html">Каталог товаров</a>
                                 <div class="sub-menu">
                                     <div class="inner-container">
                                         <ul class="video-products">
@@ -50,9 +60,9 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="delivery-link"><a href="delivery.html">Доставка</a></li>
-                            <li class="warranty-link"><a href="warranty.html">Гарантия</a></li>
-                            <li class="contacts-link"><a href="contacts.html">Контакты</a></li>
+                            <li class="delivery-link header-delivery-link"><a href="delivery.html">Доставка</a></li>
+                            <li class="warranty-link header-warranty-link"><a href="warranty.html">Гарантия</a></li>
+                            <li class="contacts-link header-contacts-link"><a href="contacts.html">Контакты</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -92,14 +102,17 @@
                                        </span>
                                         </div>
                                     </div>
-                                    <input type="hidden" name="price-range" value="0,5000">
+                                    <label class="visually-hidden">
+                                        Диапазон цены
+                                        <input type="hidden" name="price-range" value="0,5000">
+                                    </label>
                                 </div>
                             </fieldset>
                             <fieldset>
                                 <legend class="filter-name">Цвет</legend>
                                 <ul class="filter-options-list">
                                     <li>
-                                        <label for="filter-black">
+                                        <label class="filter-option-label" for="filter-black">
                                             <input class="visually-hidden filter-input filter-input-checkbox"
                                                    id="filter-black" type="checkbox" name="black" checked>
                                             <span class="checkbox-indicator"></span>
@@ -107,7 +120,7 @@
                                         </label>
                                     </li>
                                     <li>
-                                        <label for="filter-white">
+                                        <label class="filter-option-label" for="filter-white">
                                             <input class="visually-hidden filter-input filter-input-checkbox"
                                                    id="filter-white" type="checkbox" name="white">
                                             <span class="checkbox-indicator"></span>
@@ -115,7 +128,7 @@
                                         </label>
                                     </li>
                                     <li>
-                                        <label for="filter-blue">
+                                        <label class="filter-option-label" for="filter-blue">
                                             <input class="visually-hidden filter-input filter-input-checkbox"
                                                    id="filter-blue" type="checkbox" name="blue" checked>
                                             <span class="checkbox-indicator"></span>
@@ -123,7 +136,7 @@
                                         </label>
                                     </li>
                                     <li>
-                                        <label for="filter-red">
+                                        <label class="filter-option-label" for="filter-red">
                                             <input class="visually-hidden filter-input filter-input-checkbox"
                                                    id="filter-red" type="checkbox" name="red" checked>
                                             <span class="checkbox-indicator"></span>
@@ -131,7 +144,7 @@
                                         </label>
                                     </li>
                                     <li>
-                                        <label for="filter-pink">
+                                        <label class="filter-option-label" for="filter-pink">
                                             <input class="visually-hidden filter-input filter-input-checkbox"
                                                    id="filter-pink" type="checkbox" name="pink">
                                             <span class="checkbox-indicator"></span>
@@ -144,7 +157,7 @@
                                 <legend class="filter-name">Bluetooth</legend>
                                 <ul class="filter-options-list">
                                     <li>
-                                        <label for="filter-bluetooth-yes">
+                                        <label class="filter-option-label" for="filter-bluetooth-yes">
                                             <input class="visually-hidden filter-input filter-input-radio" type="radio"
                                                    id="filter-bluetooth-yes" name="bluetooth" value="yes" checked>
                                             <span class="radio-indicator"></span>
@@ -152,7 +165,7 @@
                                         </label>
                                     </li>
                                     <li>
-                                        <label for="filter-bluetooth-no">
+                                        <label class="filter-option-label" for="filter-bluetooth-no">
                                             <input class="visually-hidden filter-input filter-input-radio" type="radio"
                                                    id="filter-bluetooth-no" name="bluetooth" value="no">
                                             <span class="radio-indicator"></span>
@@ -231,7 +244,7 @@
                                 </li>
                                 <li class="catalog-item">
                                     <h3 class="item-name">
-                                        <a href="catalog-item.html"> Профессиональная селфи-палка</a>
+                                        <a href="catalog-item.html"> Профессиональная селфи&#8209;палка</a>
                                     </h3>
                                     <p>
                                         <img class="item-photo" src="img/item-2.jpg" width="360" height="380"
@@ -296,9 +309,10 @@
                         <img src="img/footer-logo.png" width="163" height="36" alt="DEVICE"/>
                     </a>
                     <ul class="user-links footer-user-links">
-                        <li class="logout-link"><a class="logout-link" href="#">Выйти</a></li>
-                        <li class="compare-link"><a href="compare.html">Сравнить</a></li>
-                        <li class="cart-link"><a href="cart.html">Корзина</a></li>
+                        <li class="login-link footer-login-link hidden"><a href="login.html">Войти</a></li>
+                        <li class="logout-link footer-logout-link"><a class="logout-link" href="#">Выйти</a></li>
+                        <li class="compare-link footer-compare-link"><a href="compare.html">Сравнить</a></li>
+                        <li class="cart-link footer-cart-link"><a href="cart.html">Корзина</a></li>
                     </ul>
                 </div>
                 <div class="footer-middle">

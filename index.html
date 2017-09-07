@@ -24,16 +24,26 @@
                             <button type="submit" class="search-btn">Найти</button>
                         </form>
                         <ul class="user-links header-user-links">
-                            <li class="login-link"><a href="login.html">Войти</a></li>
-                            <li class="user-name profile-link hidden"><a href="profile.html">Валентин Петухов</a></li>
-                            <li class="logout-link hidden"><a href="#">Выйти</a></li>
-                            <li class="compare-link"><a href="compare.html">Сравнить</a></li>
-                            <li class="cart-link"><a href="cart.html">Корзина</a></li>
+                            <li class="login-link header-login-link">
+                                <a href="login.html">Войти</a>
+                            </li>
+                            <li class="profile-link header-profile-link user-name hidden">
+                                <a href="profile.html">Валентин Петухов</a>
+                            </li>
+                            <li class="logout-link header-logout-link hidden">
+                                <a href="#">Выйти</a>
+                            </li>
+                            <li class="compare-link header-compare-link">
+                                <a href="compare.html">Сравнить</a>
+                            </li>
+                            <li class="cart-link header-cart-link">
+                                <a href="cart.html">Корзина</a>
+                            </li>
                         </ul>
                     </div>
                     <nav class="main-nav">
                         <ul class="site-nav header-site-nav">
-                            <li class="catalog-link contains-sub-menu"><a href="catalog.html">Каталог товаров</a>
+                            <li class="catalog-link header-catalog-link sub-menu-link"><a href="catalog.html">Каталог товаров</a>
                                 <div class="sub-menu">
                                     <div class="inner-container">
                                         <ul class="video-products">
@@ -51,9 +61,9 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="delivery-link"><a href="delivery.html">Доставка</a></li>
-                            <li class="warranty-link"><a href="warranty.html">Гарантия</a></li>
-                            <li class="contacts-link"><a href="contacts.html">Контакты</a></li>
+                            <li class="delivery-link header-delivery-link"><a href="delivery.html">Доставка</a></li>
+                            <li class="warranty-link header-warranty-link"><a href="warranty.html">Гарантия</a></li>
+                            <li class="contacts-link header-contacts-link"><a href="contacts.html">Контакты</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -89,18 +99,20 @@
                                                 Карл!) метров длиной и весом всего 5 килограмм.
                                             </p>
                                             <a class="btn" href="catalog-item.html">Подробнее</a>
-                                            <table class="slide-product-features">
-                                                <tr class="features-value">
-                                                    <td>8,5 м</td>
-                                                    <td>5 кг</td>
-                                                    <td>Карбон</td>
-                                                </tr>
-                                                <tr class="features-label">
-                                                    <td>Длина палки</td>
-                                                    <td>Вес палки</td>
-                                                    <td>Материал</td>
-                                                </tr>
-                                            </table>
+                                            <div class="features-table-wrapper">
+                                                <table class="slide-product-features">
+                                                    <tr class="features-value">
+                                                        <td>8,5 м</td>
+                                                        <td>5 кг</td>
+                                                        <td>Карбон</td>
+                                                    </tr>
+                                                    <tr class="features-label">
+                                                        <td>Длина палки</td>
+                                                        <td>Вес палки</td>
+                                                        <td>Материал</td>
+                                                    </tr>
+                                                </table>
+                                            </div>
                                         </div>
                                     </div>
                                 </article>
@@ -114,12 +126,12 @@
                                         <div class="column-right">
 
                                             <h2 class="slide-title">Худеем<br> правильно!</h2>
-                                            <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать
-                                                занятия
-                                                и
-                                                соблюдать
-                                                диету.</p>
+                                            <p>
+                                                Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать
+                                                занятия и соблюдать диету.
+                                            </p>
                                             <a class="btn" href="catalog-item.html">Подробнее</a>
+                                            <div class="features-table-wrapper">
                                             <table class="slide-product-features">
                                                 <tr class="features-value">
                                                     <td>48 часов</td>
@@ -128,6 +140,7 @@
                                                     <td>Без подзарядки</td>
                                                 </tr>
                                             </table>
+                                            </div>
                                         </div>
                                     </div>
                                 </article>
@@ -141,21 +154,23 @@
                                         </div>
                                         <div class="column-right">
                                             <h2 class="slide-title">Порхает как бабочка, жалит как пчела!</h2>
-                                            <p>Этот обычный, на первый взгляд, квадракоптер оснащен мощным лазером,
-                                                замаскированным
-                                                под
-                                                стандартную камеру.</p>
+                                            <p>
+                                                Этот обычный, на первый взгляд, квадракоптер оснащен мощным лазером,
+                                                замаскированным под стандартную камеру.
+                                            </p>
                                             <a class="btn" href="catalog-item.html">Подробнее</a>
-                                            <table class="slide-product-features">
-                                                <tr class="features-value">
-                                                    <td>800 м</td>
-                                                    <td>50 м</td>
-                                                </tr>
-                                                <tr class="features-label">
-                                                    <td>Дальность полета</td>
-                                                    <td>Радиус поражения</td>
-                                                </tr>
-                                            </table>
+                                            <div class="features-table-wrapper">
+                                                <table class="slide-product-features">
+                                                    <tr class="features-value">
+                                                        <td>800 м</td>
+                                                        <td>50 м</td>
+                                                    </tr>
+                                                    <tr class="features-label">
+                                                        <td>Дальность полета</td>
+                                                        <td>Радиус поражения</td>
+                                                    </tr>
+                                                </table>
+                                            </div>
                                         </div>
                                     </div>
                                 </article>
@@ -170,7 +185,7 @@
 
                     <ul class="product-categories-list">
                         <li class="product-category category-virtual-reality">
-                            <a href="catalog.html">
+                            <a class="product-category-link" href="catalog.html">
                             <span class="category-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="97" height="55" viewBox="0 0 97 55"><g
                                     fill="#363636"><path
@@ -181,7 +196,7 @@
                             </a>
                         </li>
                         <li class="product-category category-selfie-monopod">
-                            <a href="catalog.html">
+                            <a class="product-category-link" href="catalog.html">
                             <span class="category-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="86" height="117" viewBox="0 0 86 117"><g
                                     fill="#363636"><path
@@ -191,7 +206,7 @@
                             </a>
                         </li>
                         <li class="product-category category-action-camera">
-                            <a href="catalog.html">
+                            <a class="product-category-link" href="catalog.html">
                             <span class="category-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="71" height="87" viewBox="0 0 71 87"><g
                                     fill="#363636"><path
@@ -208,7 +223,7 @@
                             </a>
                         </li>
                         <li class="product-category category-fitness-bracelet">
-                            <a href="catalog.html">
+                            <a class="product-category-link" href="catalog.html">
                             <span class="category-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="107" height="65" viewBox="0 0 107 65"><g
                                     fill="#363636"><path
@@ -219,7 +234,7 @@
                             </a>
                         </li>
                         <li class="product-category category-smart-watch">
-                            <a href="catalog.html">
+                            <a class="product-category-link" href="catalog.html">
                             <span class="category-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="56" height="98" viewBox="0 0 56 98"><g
                                     fill="#363636"><path
@@ -229,7 +244,7 @@
                             </a>
                         </li>
                         <li class="product-category category-quadrupter">
-                            <a href="catalog.html">
+                            <a class="product-category-link" href="catalog.html">
                             <span class="category-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="132" height="69" viewBox="0 0 132 69"><g
                                     fill="#363636"><path
@@ -327,10 +342,10 @@
                         <img src="img/footer-logo.png" width="163" height="36" alt="DEVICE"/>
                     </a>
                     <ul class="user-links footer-user-links">
-                        <li class="login-link"><a href="login.html">Войти</a></li>
-                        <li class="logout-link hidden"><a href="#">Выйти</a></li>
-                        <li class="compare-link"><a href="compare.html">Сравнить</a></li>
-                        <li class="cart-link"><a href="cart.html">Корзина</a></li>
+                        <li class="login-link footer-login-link"><a href="login.html">Войти</a></li>
+                        <li class="logout-link footer-logout-link hidden"><a href="#">Выйти</a></li>
+                        <li class="compare-link footer-compare-link"><a href="compare.html">Сравнить</a></li>
+                        <li class="cart-link footer-cart-link"><a href="cart.html">Корзина</a></li>
                     </ul>
                 </div>
                 <div class="footer-middle">
