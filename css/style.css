@@ -1686,7 +1686,7 @@ img {
     cursor: pointer;
 }
 
-.sort label:hover {
+.sort-type label:hover {
     opacity: 0.6;
 }
 
@@ -1727,6 +1727,8 @@ label.sort-arrow {
 }
 
 .sort-arrow:hover,
+.sort-order input:checked + .sort-arrow:hover,
+.sort-order input:checked + .sort-arrow:focus,
 .sort-arrow:focus {
     opacity: 0.4;
 }
