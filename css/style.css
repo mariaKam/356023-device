@@ -1353,6 +1353,10 @@ img {
     border: 0;
 }
 
+.modal-show {
+    display: block;
+}
+
 /* ==========================================================================
    Breadcrumbs
    ========================================================================== */
@@ -1566,7 +1570,7 @@ img {
     cursor: pointer;
 }
 
-.filter-option-label:focus{
+.filter-option-label:focus {
     outline: none;
 }
 
@@ -1720,8 +1724,6 @@ label.sort-arrow {
 
 .sort-order input:checked + .sort-arrow {
     opacity: 0.2;
-
-    cursor: default;
 }
 
 .sort-arrow:hover,
