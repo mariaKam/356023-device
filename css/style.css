@@ -1636,10 +1636,16 @@ img {
     opacity: 1;
 }
 
-.filters input[type="radio"]:active + .radio-indicator {
+.filters input[type="radio"]:checked:active + .radio-indicator {
+    background-image: url(../img/icons/radio-off.svg);
+    opacity: 1;
+}
+
+.filters input[type="radio"]:not(checked):active + .radio-indicator {
     background-image: url(../img/icons/radio-on.svg);
     opacity: 1;
 }
+
 
 /* ==========================================================================
    Catalog sort
@@ -1699,7 +1705,7 @@ img {
 
 .sort-order {
     justify-content: space-between;
-    width: 40px;
+    width: 44px;
     margin-left: auto;
 }
 
@@ -1707,6 +1713,7 @@ label.sort-arrow {
     display: block;
     width: 11px;
     height: 10px;
+    padding: 10px 3px;
 
     background-repeat: no-repeat;
     background-position: center center;
@@ -1715,6 +1722,7 @@ label.sort-arrow {
 }
 
 .sort-arrow.arrow-bottom {
+    padding-right: 0;
     background-image: url(../img/icons/icon-down-dir.svg);
 }
 

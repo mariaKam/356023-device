@@ -6,6 +6,7 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
         <link rel="stylesheet" type="text/css" href="css/style.css"/>
+
     </head>
 
     <body>
@@ -391,7 +392,7 @@
 
         <section class="modal modal-contact" id="modal-contact">
             <h2 class="visually-hidden">Форма обратной связи</h2>
-            <form class="contact-form" method="post" action="https://up.echo.htmlacademy.ru">
+            <form class="contact-form" method="post" action="https://echo.htmlacademy.ru">
                 <div class="inputs-wrapper">
                     <p class="input-left">
                         <label for="contact-name">Ваше имя</label>
@@ -405,7 +406,7 @@
                 </div>
                 <p>
                     <label for="contact-message">Текст письма:</label><br>
-                    <textarea name="date" id="contact-message" rows="7" placeholder="В свободной форме"></textarea>
+                    <textarea name="message" id="contact-message" rows="7" placeholder="В свободной форме"></textarea>
                 </p>
                 <button type="submit" class="btn send-btn">Отправить</button>
             </form>
@@ -424,31 +425,7 @@
             <button type="button" class="modal-close"><span class="visually-hidden">Закрыть</span></button>
         </section>
 
-
-
-        <!--<script>-->
-
-            <!--var link = document.querySelector('.contacts-btn');-->
-
-            <!--var modal = document.querySelector('.modal-contact');-->
-
-            <!--var close = modal.querySelector('.modal-close');-->
-
-            <!--var name = modal.querySelector('#contact-name');-->
-
-            <!--link.addEventListener('click', function (evt) {-->
-                <!--evt.preventDefault();-->
-
-                <!--modal.classList.add('modal-show');-->
-                <!--name.classList.add('red');-->
-            <!--});-->
-
-            <!--close.addEventListener('click', function (evt) {-->
-                <!--evt.preventDefault();-->
-                <!--modal.classList.remove('modal-show');-->
-            <!--})-->
-
-        <!--</script>-->
+        <script src="js/script.js"></script>
 
     </body>
 </html>
