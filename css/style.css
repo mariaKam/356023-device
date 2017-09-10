@@ -302,6 +302,11 @@ img {
     opacity: 0.2;
 }
 
+.logo img,
+.footer-copyright-logo img {
+    transition: 0.2s linear all;
+}
+
 .logo:hover img,
 .logo:focus img,
 .footer-copyright-logo:hover img,
@@ -732,6 +737,8 @@ img {
     height: 160px;
 
     background-color: #f8e296;
+
+    transition: 0.2s linear background;
 }
 
 .category-icon svg {
@@ -802,6 +809,8 @@ img {
     margin-bottom: 24px;
 
     text-align: center;
+
+    transition: 0.2s linear width, 0.15s linear color;
 }
 
 .tabs-nav-item.active,
@@ -908,6 +917,8 @@ img {
 
     background-repeat: no-repeat;
     background-position: 0 0;
+
+    transition: 0.2s linear opacity;
 }
 
 .product-brand:hover::after {
@@ -957,19 +968,9 @@ img {
 }
 
 .contacts-map-image {
-    position: absolute;
-
-    margin-top: 8px;
-
-    cursor: pointer;
-}
-
-.contacts-map-interactive {
-    position: relative;
-
     margin: 8px 0 60px;
 
-    border: 0;
+    cursor: pointer;
 }
 
 .transport-companies-list {
@@ -1531,6 +1532,11 @@ img {
 
 .range-slider-handle:active {
     background-size: 23px;
+    outline: none;
+}
+
+.range-slider-handle:visited {
+    outline: none;
 }
 
 .left-handle {
@@ -1589,6 +1595,11 @@ img {
     outline: none;
 }
 
+.checkbox-indicator,
+.radio-indicator {
+    transition: 0.1s linear all;
+}
+
 .filters input[type="checkbox"] + .checkbox-indicator {
     position: absolute;
     top: 0;
@@ -1639,7 +1650,7 @@ img {
 .filter-option-label:focus .radio-indicator,
 .filter-option-label:focus .checkbox-indicator,
 .filter-input:focus + .checkbox-indicator,
-.filter-input:focus + .radio-indicator{
+.filter-input:focus + .radio-indicator {
     opacity: 0.6;
 }
 
@@ -1705,6 +1716,8 @@ img {
 
     opacity: 0.3;
 
+    transition: 0.1s linear opacity;
+
     cursor: pointer;
 }
 
@@ -1717,7 +1730,7 @@ img {
     opacity: 1;
 }
 
-.sort-input:focus + label{
+.sort-input:focus + label {
     outline: -webkit-focus-ring-color auto 5px;
 }
 
@@ -1737,6 +1750,8 @@ label.sort-arrow {
 
     background-repeat: no-repeat;
     background-position: center center;
+
+    transition: 0.1s linear opacity;
 
     cursor: pointer;
 }
@@ -1908,7 +1923,7 @@ label.sort-arrow {
     opacity: 0.5;
 }
 
-.catalog-item:hover .item-actions{
+.catalog-item:hover .item-actions {
     visibility: visible;
 }
 
@@ -1991,6 +2006,8 @@ label.sort-arrow {
 
     height: 70px;
     padding: 10px 25px;
+
+    transition: 0.1s linear background-color;
 }
 
 .pagination-btn::before {

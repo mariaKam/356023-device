@@ -54,7 +54,7 @@ window.addEventListener('keydown', function (evt) {
     }
 });
 
-var mapLink = document.querySelector('.contacts-map-interactive');
+var mapLink = document.querySelector('.contacts-map-image');
 var mapModal = document.querySelector('.modal-map');
 var mapClose = mapModal.querySelector('.modal-close');
 
