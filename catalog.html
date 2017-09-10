@@ -94,10 +94,10 @@
                                 <div class="price-range-input-wrapper">
                                     <div class="range-slider price-range-slider">
                                         <div class="range-slider-active">
-                                       <span class="range-slider-handle left-handle">
+                                       <span class="range-slider-handle left-handle" tabindex="1">
                                          <span class="price-range-value price-range-min-value"> от 0</span>
                                        </span>
-                                            <span class="range-slider-handle right-handle">
+                                            <span class="range-slider-handle right-handle" tabindex="1">
                                          <span class="price-range-value price-range-max-value"> до 5000</span>
                                        </span>
                                         </div>
@@ -186,18 +186,18 @@
                             <form class="sort-form" method="get" action="https://echo.htmlacademy.ru">
                                 <ul class="sort-options-list sort-type">
                                     <li>
-                                        <input class="visually-hidden filter-input filter-input-radio" type="radio"
+                                        <input class="visually-hidden sort-input sort-input-radio" type="radio"
                                                name="sort" value="by-price" id="sort-price"
                                                onchange="this.form.submit()" checked>
                                         <label for="sort-price">По цене</label>
                                     </li>
                                     <li>
-                                        <input class="visually-hidden filter-input filter-input-radio" type="radio"
+                                        <input class="visually-hidden sort-input sort-input-radio" type="radio"
                                                name="sort" value="by-type" id="sort-type" onchange="this.form.submit()">
                                         <label for="sort-type">По типу</label>
                                     </li>
                                     <li>
-                                        <input class="visually-hidden filter-input filter-input-radio" type="radio"
+                                        <input class="visually-hidden sort-input sort-input-radio" type="radio"
                                                name="sort" value="by-popularity" id="sort-popular"
                                                onchange="this.form.submit()">
                                         <label for="sort-popular">По популярности</label>
@@ -205,7 +205,7 @@
                                 </ul>
                                 <ul class="sort-options-list sort-order">
                                     <li>
-                                        <input class="visually-hidden filter-input filter-input-radio"
+                                        <input class="visually-hidden sort-input sort-input-radio"
                                                type="radio" name="display-order" value="ascending" id="sort-asc" checked
                                                onchange="this.form.submit()">
                                         <label for="sort-asc" class="sort-arrow arrow-top">
@@ -213,7 +213,7 @@
                                         </label>
                                     </li>
                                     <li>
-                                        <input class="visually-hidden filter-input filter-input-radio"
+                                        <input class="visually-hidden sort-input sort-input-radio"
                                                type="radio"
                                                name="display-order" value="descending" id="sort-desc"
                                                onchange="this.form.submit()">
@@ -286,6 +286,7 @@
                                         <a class="item-compare" href="#">Добавить к сравнению</a>
                                     </p>
                                 </li>
+
                             </ul>
                             <section class="pagination">
                                 <button class="btn pagination-btn pagination-btn-prev" type="button">Назад</button>

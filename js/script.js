@@ -69,24 +69,43 @@ mapClose.addEventListener('click', function (evt) {
 });
 
 
+var sliderIndicator = document.querySelectorAll('.indicator');
+var i;
 
+for (i = 0; i < sliderIndicator.length; i++) {
 
+    sliderIndicator[i].addEventListener('click', function () {
+        var currentSlide = document.querySelector('.slide.active');
+        currentSlide.classList.remove('active');
 
+        var nextSliderClass = '.slide-' + this.dataset.slideTo;
+        var nextSlider = document.querySelector(nextSliderClass);
+        nextSlider.classList.add('active');
 
+        var currentSlideIndicator = document.querySelector('.indicator.active');
+        currentSlideIndicator.classList.remove('active');
+        this.classList.add('active');
+    });
+}
 
+var tabsNavItem = document.querySelectorAll('.tabs-nav-item');
+var c;
 
+for (c = 0; c < tabsNavItem.length; c++) {
 
+    tabsNavItem[c].addEventListener('click', function (evt) {
 
+        evt.preventDefault();
 
+        var currentTab = document.querySelector('.tab-pane.active');
+        currentTab.classList.remove('active');
 
+        var nextTabClass = '.tab-pane-' + this.dataset.switchTo;
+        var nextTab = document.querySelector(nextTabClass);
+        nextTab.classList.add('active');
 
-
-
-
-
-
-
-
-
-
-
+        var currentTabsNavItem = document.querySelector('.tabs-nav-item.active');
+        currentTabsNavItem.classList.remove('active');
+        this.classList.add('active');
+    });
+}

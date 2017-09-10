@@ -6,11 +6,9 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
         <link rel="stylesheet" type="text/css" href="css/style.css"/>
-
     </head>
 
     <body>
-
         <div class="container">
             <header class="main-header">
                 <div class="inner-container">
@@ -81,9 +79,9 @@
                     <div class="inner-container">
                         <div class="slider promo-slider">
                             <ol class="slider-indicators">
-                                <li class="indicator indicator-1 active"></li>
-                                <li class="indicator indicator-2"></li>
-                                <li class="indicator indicator-3"></li>
+                                <li class="indicator indicator-1 active" data-slide-to="1"></li>
+                                <li class="indicator indicator-2" data-slide-to="2"></li>
+                                <li class="indicator indicator-3" data-slide-to="3"></li>
                             </ol>
                             <div class="slider-inner">
                                 <article class="slide slide-1 active">
@@ -187,7 +185,7 @@
 
                     <ul class="product-categories-list">
                         <li class="product-category category-virtual-reality">
-                            <a class="product-category-link" href="catalog.html">
+                            <a class="product-category-link" href="catalog.html?cat=virtual-reality">
                             <span class="category-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="97" height="55" viewBox="0 0 97 55"><g
                                     fill="#363636"><path
@@ -198,7 +196,7 @@
                             </a>
                         </li>
                         <li class="product-category category-selfie-monopod">
-                            <a class="product-category-link" href="catalog.html">
+                            <a class="product-category-link" href="catalog.html?cat=selfie-monopod">
                             <span class="category-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="86" height="117" viewBox="0 0 86 117"><g
                                     fill="#363636"><path
@@ -208,7 +206,7 @@
                             </a>
                         </li>
                         <li class="product-category category-action-camera">
-                            <a class="product-category-link" href="catalog.html">
+                            <a class="product-category-link" href="catalog.html?cat=action-camera">
                             <span class="category-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="71" height="87" viewBox="0 0 71 87"><g
                                     fill="#363636"><path
@@ -225,7 +223,7 @@
                             </a>
                         </li>
                         <li class="product-category category-fitness-bracelet">
-                            <a class="product-category-link" href="catalog.html">
+                            <a class="product-category-link" href="catalog.html?cat=fitness-bracelet">
                             <span class="category-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="107" height="65" viewBox="0 0 107 65"><g
                                     fill="#363636"><path
@@ -236,7 +234,7 @@
                             </a>
                         </li>
                         <li class="product-category category-smart-watch">
-                            <a class="product-category-link" href="catalog.html">
+                            <a class="product-category-link" href="catalog.html?cat=smart-watch">
                             <span class="category-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="56" height="98" viewBox="0 0 56 98"><g
                                     fill="#363636"><path
@@ -246,7 +244,7 @@
                             </a>
                         </li>
                         <li class="product-category category-quadrupter">
-                            <a class="product-category-link" href="catalog.html">
+                            <a class="product-category-link" href="catalog.html?cat=quadrupter">
                             <span class="category-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="132" height="69" viewBox="0 0 132 69"><g
                                     fill="#363636"><path
@@ -264,22 +262,23 @@
                 <div class="container">
                     <h2 class="visually-hidden">Услуги</h2>
                     <ul class="tabs-nav">
-                        <li><a class="btn tabs-nav-item tabs-nav-item-active" href="#delivery-tab">Доставка</a></li>
-                        <li><a class="btn tabs-nav-item" href="#warranty-tab">Гарантия</a></li>
-                        <li><a class="btn tabs-nav-item" href="#credit-tab">Кредит</a></li>
+                        <li><a class="btn tabs-nav-item active" data-switch-to="1" href="#delivery-tab">Доставка</a>
+                        </li>
+                        <li><a class="btn tabs-nav-item" data-switch-to="2" href="#warranty-tab">Гарантия</a></li>
+                        <li><a class="btn tabs-nav-item" data-switch-to="3" href="#credit-tab">Кредит</a></li>
                     </ul>
                     <div class="tabs-content">
-                        <div class="tab-pane active" id="delivery-tab">
+                        <div class="tab-pane tab-pane-1 active" id="delivery-tab">
                             <h2 class="tab-title">Доставка</h2>
                             <p> Мы с удовольствием доставим товар прямо к вашему подъезду совершенно бесплатно! Ведь мы
                                 неплохо заработаем, поднимая его на ваш этаж.</p>
                         </div>
-                        <div class="tab-pane" id="warranty-tab">
+                        <div class="tab-pane tab-pane-2" id="warranty-tab">
                             <h2 class="tab-title">Гарантия</h2>
                             <p>Если из-за возгорания купленого у нас товара у вас сгорит дом - не переживайте, мы
                                 выдадим вам новый. Товар, не дом, конечно же.</p>
                         </div>
-                        <div class="tab-pane" id="credit-tab">
+                        <div class="tab-pane tab-pane-3" id="credit-tab">
                             <h2 class="tab-title">Кредит</h2>
                             <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее
                                 выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
@@ -323,7 +322,7 @@
                     </section>
                     <section class="contacts column-right">
                         <h2 class="section-title">Контакты</h2>
-                        <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить
+                        <p> Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить
                             работоспособность покупки. Всякое бывает.
                         </p>
                         <img class="contacts-map-image" src="img/map.jpg" width="560" height="222"
@@ -331,7 +330,7 @@
                         <iframe width="560" height="222" class="contacts-map-interactive"
                                 src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJVYlcX_ZMtUYRHlBVzQxxlAY&key=AIzaSyDGS-M4u3Ve0HbcdXrRxklKUpEL4heQoLs"
                                 allowfullscreen></iframe>
-                        <a class="btn contacts-btn" href="#modal-contact">Напишите нам</a>
+                        <a class="btn contacts-btn" href="writeus.html">Напишите нам</a>
                     </section>
                 </div>
             </div>
