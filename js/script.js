@@ -31,7 +31,9 @@ contactLink.addEventListener('click', function (evt) {
 contactForm.addEventListener('submit', function (evt) {
     if (!contactName.value || !contactEmail.value || !contactMessage.value) {
         evt.preventDefault();
-        console.log('Заполните все поля');
+        contactModal.classList.remove('modal-error');
+        contactModal.offsetWidth = contactModal.offsetWidth;
+        contactModal.classList.add('modal-error');
     }
     else {
         localStorage.setItem('contactName', contactName.value);
@@ -42,12 +44,14 @@ contactForm.addEventListener('submit', function (evt) {
 contactClose.addEventListener('click', function (evt) {
     evt.preventDefault();
     contactModal.classList.remove('modal-show');
+    contactModal.classList.remove('modal-error');
 });
 
 window.addEventListener('keydown', function (evt) {
     if (evt.keyCode === 27) {
         if (contactModal.classList.contains('modal-show')) {
             contactModal.classList.remove('modal-show');
+            contactModal.classList.remove('modal-error');
         }
     }
 });
