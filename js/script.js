@@ -1,11 +1,9 @@
-var modal = document.querySelector('.modal');
-
 var contactLink = document.querySelector('.contacts-btn');
 var contactModal = document.querySelector('.modal-contact');
-var contactForm = modal.querySelector('form');
-var contactName = modal.querySelector('[name=name]');
-var contactEmail = modal.querySelector('[name=email');
-var contactMessage = modal.querySelector('[name=message');
+var contactForm = contactModal.querySelector('form');
+var contactName = contactModal.querySelector('[name=name]');
+var contactEmail = contactModal.querySelector('[name=email');
+var contactMessage = contactModal.querySelector('[name=message');
 var emailStorage = localStorage.getItem('contactEmail');
 var nameStorage = localStorage.getItem('contactName');
 var contactClose = contactModal.querySelector('.modal-close');
@@ -78,8 +76,8 @@ for (i = 0; i < sliderIndicator.length; i++) {
         var currentSlide = document.querySelector('.slide.active');
         currentSlide.classList.remove('active');
 
-        var nextSliderClass = '.slide-' + this.dataset.slideTo;
-        var nextSlider = document.querySelector(nextSliderClass);
+        var nextSliderId = '#slide-' + this.dataset.slideTo;
+        var nextSlider = document.querySelector(nextSliderId);
         nextSlider.classList.add('active');
 
         var currentSlideIndicator = document.querySelector('.indicator.active');
@@ -100,8 +98,8 @@ for (c = 0; c < tabsNavItem.length; c++) {
         var currentTab = document.querySelector('.tab-pane.active');
         currentTab.classList.remove('active');
 
-        var nextTabClass = '.tab-pane-' + this.dataset.switchTo;
-        var nextTab = document.querySelector(nextTabClass);
+        var nextTabId = '#tab-pane-' + this.dataset.switchTo;
+        var nextTab = document.querySelector(nextTabId);
         nextTab.classList.add('active');
 
         var currentTabsNavItem = document.querySelector('.tabs-nav-item.active');

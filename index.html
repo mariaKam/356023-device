@@ -5,7 +5,7 @@
         <title>HTML Academy: Девайс</title>
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
-        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <link rel="stylesheet" type="text/css" href="css/style.min.css"/>
     </head>
 
     <body>
@@ -79,12 +79,12 @@
                     <div class="inner-container">
                         <div class="slider promo-slider">
                             <ol class="slider-indicators">
-                                <li class="indicator indicator-1 active" data-slide-to="1"></li>
-                                <li class="indicator indicator-2" data-slide-to="2"></li>
-                                <li class="indicator indicator-3" data-slide-to="3"></li>
+                                <li class="indicator active" id="indicator-1" data-slide-to="1"></li>
+                                <li class="indicator" id="indicator-2" data-slide-to="2"></li>
+                                <li class="indicator" id="indicator-3" data-slide-to="3"></li>
                             </ol>
                             <div class="slider-inner">
-                                <article class="slide slide-1 active">
+                                <article class="slide active" id="slide-1">
                                     <span class="slide-number">01</span>
                                     <div class="two-columns-container">
                                         <div class="column-left">
@@ -116,7 +116,7 @@
                                         </div>
                                     </div>
                                 </article>
-                                <article class="slide slide-2">
+                                <article class="slide" id="slide-2">
                                     <span class="slide-number">02</span>
                                     <div class="two-columns-container">
                                         <div class="column-left">
@@ -144,7 +144,7 @@
                                         </div>
                                     </div>
                                 </article>
-                                <article class="slide slide-3">
+                                <article class="slide" id="slide-3">
                                     <span class="slide-number">03</span>
                                     <div class="two-columns-container">
                                         <div class="column-left">
@@ -268,17 +268,17 @@
                         <li><a class="btn tabs-nav-item" data-switch-to="3" href="#credit-tab">Кредит</a></li>
                     </ul>
                     <div class="tabs-content">
-                        <div class="tab-pane tab-pane-1 active" id="delivery-tab">
+                        <div class="tab-pane delivery-tab active" id="tab-pane-1">
                             <h2 class="tab-title">Доставка</h2>
                             <p> Мы с удовольствием доставим товар прямо к вашему подъезду совершенно бесплатно! Ведь мы
                                 неплохо заработаем, поднимая его на ваш этаж.</p>
                         </div>
-                        <div class="tab-pane tab-pane-2" id="warranty-tab">
+                        <div class="tab-pane warranty-tab" id="tab-pane-2">
                             <h2 class="tab-title">Гарантия</h2>
                             <p>Если из-за возгорания купленого у нас товара у вас сгорит дом - не переживайте, мы
                                 выдадим вам новый. Товар, не дом, конечно же.</p>
                         </div>
-                        <div class="tab-pane tab-pane-3" id="credit-tab">
+                        <div class="tab-pane credit-tab" id="tab-pane-3">
                             <h2 class="tab-title">Кредит</h2>
                             <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее
                                 выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
@@ -325,8 +325,10 @@
                         <p> Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить
                             работоспособность покупки. Всякое бывает.
                         </p>
-                        <img class="contacts-map-image" src="img/map.jpg" width="560" height="222"
-                             alt="г. Москва, ул. Строителей, 15">
+                        <a href="https://www.google.ru/maps/place/%D1%83%D0%BB.+%D0%A1%D1%82%D1%80%D0%BE%D0%B8%D1%82%D0%B5%D0%BB%D0%B5%D0%B9,+15,+%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0,+119311/@55.687031,37.5274293,17z/data=!3m1!4b1!4m5!3m4!1s0x46b54cf65f5c8955:0x694710ccd55501e!8m2!3d55.687031!4d37.529618">
+                            <img class="contacts-map-image" src="img/map.jpg" width="560" height="222"
+                                 alt="г. Москва, ул. Строителей, 15">
+                        </a>
                         <a class="btn contacts-btn" href="writeus.html">Напишите нам</a>
                     </section>
                 </div>
@@ -421,7 +423,7 @@
             <button type="button" class="modal-close"><span class="visually-hidden">Закрыть</span></button>
         </section>
 
-        <script src="js/script.js"></script>
+        <script type="text/javascript" src="js/script.min.js"></script>
 
     </body>
 </html>
